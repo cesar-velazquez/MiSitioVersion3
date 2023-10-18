@@ -8,7 +8,7 @@ const NavBar = () => {
         setIsOpen(!isOpen)
     }
     return (
-        <header className='bg-gray-900 text-white font-bold p-4 flex justify-between items-center fixed w-[min(100%,_1200px)] '>
+        <header className='z-50 bg-gray-900 text-white font-bold p-4 flex justify-between items-center fixed w-[min(100%,_1200px)] '>
             <nav className='text-2xl '>
                 Cv <span className='text-red-600 text-2xl' >.</span>
             </nav>
@@ -68,9 +68,9 @@ const NavBar = () => {
                                 <li><a href="">Habilidades</a></li>
                             </div>
                             <span> | </span>
-                            <div className='flex'>
-                                <li><a href="https://github.com/cesar-velazquez" target="_blank"><i className='bx bxl-github'></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/c%C3%A9sar-velazquez-722a9121b/" target="_blank"><i className='bx bxl-linkedin-square'></i></a></li>
+                            <div className='flex gap-2 animate-pulse'>
+                                <li className='hover:scale-110'><a href="https://github.com/cesar-velazquez" target="_blank"><i className='bx bxl-github'></i></a></li>
+                                <li className='hover:scale-110'><a href="https://www.linkedin.com/in/c%C3%A9sar-velazquez-722a9121b/" target="_blank"><i className='bx bxl-linkedin-square'></i></a></li>
                             </div>
                         </div>
                     </ul>
