@@ -2,6 +2,7 @@ import './App.css'
 import About from './Components/About'
 import Formation from './Components/Formation'
 import NavBar from './Components/NavBar'
+import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <About/>
         <Skills/>
         <Formation/>
+        <Projects/>
         </section>
       </main>
     </>

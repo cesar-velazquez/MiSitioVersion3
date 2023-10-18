@@ -12,7 +12,7 @@ const Formation = () => {
                 
                 
                 <article className=' grid m-auto bg-gray-950 rounded-2xl min-h-[700px] '>
-                    <h1 className='text-white text-2xl text-center pt-4 ' >Escuela</h1>
+                    <h1 className='text-white text-2xl text-center pt-4 ' >Educación</h1>
                     <article className='flex gap-4 pb-12 pt-4  '>
                         <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative' >
                             <div className='absolute top-[-10px] left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full '></div>
