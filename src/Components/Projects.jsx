@@ -44,7 +44,7 @@ const Projects = () => {
                             sm:left-[-10px] bg-[url(/imgs/Logo.png)] bg-no-repeat w-[200px] aspect-square ' >                                
                             </div>
 
-                            <div className='opacity-0 absolute  hover:opacity-100 hover:top-0 hover:right-0  
+                            <div className='opacity-0 absolute z-30  hover:opacity-100 hover:top-0 hover:right-0  
                 hover:border hover:text-white hover:w-[250px] hover:h-[200px] rounded-3xl font-bold
                 md:hover:top-4 md:hover:left-0 
                 md:hover:w-[300px] md:hover:h-[220px]
