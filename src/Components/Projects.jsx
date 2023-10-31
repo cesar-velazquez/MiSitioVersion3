@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ProjectData from '../Data/Projects.json'
 import 'animate.css';
+import '../Components/css/Projects.css'
 
 const Projects = () => {
     const [projects, setProjects] = useState([])
@@ -14,19 +15,33 @@ const Projects = () => {
         <main
             id='projects'
             className='p-4 text-white'>
-            <h1 className='text-2xl text-center sm:text-4xl font-bold my-4 pb-8 '>Proyectos</h1>
-            <div className='grid sm:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 pb-6'>
+            <div className='flex gap-4 justify-center items-center p-4 py-5'>
+                <div>
+                    <img className='bx-burst duration ' src="/imgs/project.svg" alt="Icon Projects" />
+                </div>
+                <div>
+                    <h1 className='text-2xl text-center sm:text-4xl font-bold my-4'>Proyectos</h1>
+                </div>
+            </div>
+            <div className='grid sm:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 pb-6 
+            '>
                 {
                     projects.map((project, index) => (
                         <div
                             key={index}
                             // w-[250px] h-[200px]
-                            className='relative w-[250px] h-[200px]  md:w-[300px] md:h-[250px] flex justify-center m-auto py-4'>
-                            <div className=' flex flex-col justify-center items-center cursor-pointer 
+                            className='relative w-[250px] h-[200px]  md:w-[300px] md:h-[250px] flex justify-center m-auto py-4
+                            '>
+
+                            <div className=' relative z-20 flex flex-col justify-center items-center cursor-pointer 
                             hover:opacity-100  '>
-                                <img className='rounded-3xl w-[250px] h-[200px] md:w-[300px] md:h-[250px]
-                                '
+                                <img className='rounded-3xl w-[250px] h-[200px] md:w-[300px] 
+                                md:h-[250px] '
                                     src={project.image} alt={project.alt} />
+                            </div>
+
+                            <div className=' z-10 absolute left-[-10px] top-2  sm:top-0 
+                            sm:left-[-10px] bg-[url(/imgs/Logo.png)] bg-no-repeat w-[200px] aspect-square ' >                                
                             </div>
 
                             <div className='opacity-0 absolute  hover:opacity-100 hover:top-0 hover:right-0  

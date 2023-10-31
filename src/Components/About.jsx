@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Components/css/About.css'
 
 const About = () => {
     return (
@@ -9,8 +10,11 @@ const About = () => {
             '>
                 <section className='grid gap-4 m-auto sm:w-[280px] sm:gap-4
                 sm:mx-auto sm:text-xl sm:border sm:rounded-2xl sm:h-[300px] sm:p-4
-                md:w-[350px]
+                md:w-[350px] relative
                 '>
+                    <div>
+                        <img className='animate-zoomInOut  absolute top-0 left-1 -translate-x-1/2 ' src="./animate.png" alt="" />
+                    </div>
                     <h1 className='text-sm grid  ' >Hola, mi nombre es...
                         <span className='text-lg sm:text-4xl'> César</span>
                         <span className='text-lg sm:text-4xl' >Velazquez<span className='text-lg sm:text-4xl '>.</span> </span></h1>
@@ -19,9 +23,13 @@ const About = () => {
                     </div>
 
                     <article className='text-sm sm:text-2xl grid gap-4 '>
-                        <ul className=' grid gap-2'>
-                            <li><a href="">| Linkedin |</a> </li>
-                            <li><a href=""> | Github | </a>  </li>
+                        <ul className=' grid gap-2 relative z-50'>
+                            <li className='hover:scale-105'>
+                                <a href="https://www.linkedin.com/in/c%C3%A9sar-velazquez-722a9121b/" target='_blank' >| Linkedin |</a>
+                            </li>
+                            <li className='hover:scale-105'>
+                                <a href="https://github.com/cesar-velazquez" target='_blank' > | Github | </a>
+                            </li>
                         </ul>
                         <section className='text-sm'>
                             <a className='border-2 border-red-600 text-center text-red-600 
@@ -29,8 +37,11 @@ const About = () => {
                         transition-colors duration-700'  href="#contact">CONTACT ME</a>
                         </section>
                     </article>
-
                 </section>
+
+                {/* <div>
+                    <img className='absolute top-20 bg-rose-600 ' src="/imgs/Logo.png" alt="Logo" />
+                </div> */}
 
                 {/*menor a 1280 */}
                 <section className='opacity-100 xl:hidden '>

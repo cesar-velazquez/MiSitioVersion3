@@ -35,10 +35,13 @@ const Contact = () => {
 
     return (
         <main className='text-white pb-8 '>
-            {/* <h1 className='text-center my-8 text text-2xl '>Contactame</h1> */}
+            {/* <h1 className='text-center my-8 text text-2xl '>Contactame</h1> 
+            bg-gradient-to-r from-rose-600 via-violet-600 to-neutral-600
+            */}
             <section className='sm:grid sm:grid-cols-2 sm:gap-6 ' >
                 <article className='grid px-4 ' >
-                    <h1 className='p-4 border border-black w-[min(100%,_450px)] grid m-auto 
+                    <h1 className='p-4 border 
+                    border-black w-[min(100%,_450px)] grid m-auto 
                     justify-start items-center text-3xl sm:text-5xl
                     bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black
                     rounded-2xl ' >
