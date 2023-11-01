@@ -6,7 +6,7 @@ const Formation = () => {
 
     useEffect(() => {
         ScrollReveal().reveal('.formation', {
-            duration: 4000,
+            duration: 3000,
             origin: 'left',
             distance: '300px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',

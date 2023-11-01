@@ -12,9 +12,9 @@ const Skills = () => {
 
     useEffect(() => {
         ScrollReveal().reveal('.skills', {
-            duration: 3000,
+            duration: 2000,
             origin: 'bottom',
-            distance: '500px',
+            distance: '200px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
             reset: true,
         })

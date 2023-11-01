@@ -16,7 +16,7 @@ const Projects = () => {
     useEffect(() => {
         ScrollReveal().reveal('.projects', {
             duration: 2000,
-            origin: 'right',
+            origin: 'bottom',
             distance: '200px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
             reset: false,
@@ -25,7 +25,7 @@ const Projects = () => {
     return (
         <main
             id='project'
-            className='p-4 text-white animate-fade-right '>
+            className='p-4 text-white'>
             <div className='flex gap-4 justify-center items-center p-4 py-5'>
                 <div>
                     <img className='bx-burst duration ' src="/imgs/project.svg" alt="Icon_Projects" />

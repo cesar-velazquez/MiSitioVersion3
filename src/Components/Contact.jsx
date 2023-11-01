@@ -65,7 +65,7 @@ const Contact = () => {
 
     useEffect(() => {
         ScrollReveal().reveal('.Contactme', {
-            duration: 4000,
+            duration: 2000,
             origin: 'left',
             distance: '300px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
