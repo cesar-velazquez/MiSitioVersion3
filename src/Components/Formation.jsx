@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Components/css/Formation.css'
+import ScrollReveal from 'scrollreveal';
 
 const Formation = () => {
+
+    useEffect(() => {
+        ScrollReveal().reveal('.formation', {
+            duration: 4000,
+            origin: 'left',
+            distance: '300px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            reset: true,
+        })
+    }, [])
     return (
-        <main className='pb-14 text-white ' >
+        <main 
+        id='formation'
+        className='pb-14 text-white  ' >
             <div className='text-white flex justify-center items-center p-4 py-6 mt-8 mb-6 '>
                 <div>
                     <img className='bx-spin duration' src="/imgs/Diagonal.png" alt="" />
@@ -16,7 +29,7 @@ const Formation = () => {
             </div>
 
             <section className='grid gap-12 sm:grid sm:grid-cols-2 sm:mx-4
-            bg-[url(/imgs/Gradient.svg)] bg-no-repeat bg-center '>
+            sm:bg-[url(/imgs/Cuadrado.png)] bg-no-repeat bg-center formation  '>
 
 
                 <article className=' grid m-auto bg-gray-950 rounded-2xl min-h-[700px] '>

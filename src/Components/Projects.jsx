@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ProjectData from '../Data/Projects.json'
 import 'animate.css';
 import '../Components/css/Projects.css'
+import ScrollReveal from 'scrollreveal';
 
 const Projects = () => {
     const [projects, setProjects] = useState([])
@@ -11,20 +12,29 @@ const Projects = () => {
             setProjects(ProjectData);
         }, 1000)
     }, [])
+
+    useEffect(() => {
+        ScrollReveal().reveal('.projects', {
+            duration: 2000,
+            origin: 'right',
+            distance: '200px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            reset: false,
+        })
+    }, [])
     return (
         <main
-            id='projects'
-            className='p-4 text-white'>
+            id='project'
+            className='p-4 text-white animate-fade-right '>
             <div className='flex gap-4 justify-center items-center p-4 py-5'>
                 <div>
-                    <img className='bx-burst duration ' src="/imgs/project.svg" alt="Icon Projects" />
+                    <img className='bx-burst duration ' src="/imgs/project.svg" alt="Icon_Projects" />
                 </div>
                 <div>
                     <h1 className='text-2xl text-center sm:text-4xl font-bold my-4'>Proyectos</h1>
                 </div>
             </div>
-            <div className='grid sm:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 pb-6 
-            '>
+            <div className='grid sm:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 pb-6 projects'>
                 {
                     projects.map((project, index) => (
                         <div
@@ -41,14 +51,14 @@ const Projects = () => {
                             </div>
 
                             <div className=' z-10 absolute left-[-10px] top-2  sm:top-0 
-                            sm:left-[-10px] bg-[url(/imgs/Logo.png)] bg-no-repeat w-[200px] aspect-square ' >                                
+                            sm:left-[-14px] bg-[url(/imgs/Logo.png)] bg-no-repeat w-[200px] aspect-square ' >                                
                             </div>
 
                             <div className='opacity-0 absolute z-30  hover:opacity-100 hover:top-0 hover:right-0  
                 hover:border hover:text-white hover:w-[250px] hover:h-[200px] rounded-3xl font-bold
                 md:hover:top-4 md:hover:left-0 
                 md:hover:w-[300px] md:hover:h-[220px]
-                hover:transition-all hover:duration-500
+                hover:animate-fade-down
                 bg-gradient-to-br from-gray-700 via-gray-900 to-black'>
 
                                 <div className='m-auto 

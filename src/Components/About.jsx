@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Components/css/About.css'
+import ScrollReveal from 'scrollreveal';
 
 const About = () => {
+
+    useEffect(() => {
+        ScrollReveal().reveal('.about', {
+            duration: 3000,
+            origin: 'top',
+            distance: '600px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            reset: true,
+        })
+    }, [])
     return (
-        <main className='pt-24 pb-12 p-4 text-white
+        <main
+        id='About'
+        className='pt-24 pb-12 p-4 text-white
         xl:grid xl:grid-cols-3 xl:h-[600px]  
+        about
         '>
             <section className='grid  grid-cols-2 xl:grid-cols-1 pb-8
             '>
@@ -66,8 +80,7 @@ const About = () => {
                     <p className='text-sm text-[1rem] '>Soy un joven apasionado por aprender y sumergirme en el mundo de las
                         tecnologías del desarrollo de software.</p>
                     <p className='text-sm text-[1rem] ' >Actualmente me encuentro capacitándome en un bootcamp y en diferentes cursos
-                        de tecnología con el fin de especializarme y obtener mayores oportunidades de conseguir
-                        mi primer trabajo como desarrollador.</p>
+                        de tecnología con el fin de especializarme y obtener mi primer trabajo como desarrollador.</p>
                 </section>
             </section>
         </main>

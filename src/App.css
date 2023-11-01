@@ -1,0 +1,8 @@
+.puntero{
+    min-width: 100vw; /* Ancho del elemento */    
+    min-height: 100%; /* Alto del elemento */
+    position: absolute; /* Posición absoluta para que pueda detectar el evento */
+    top: 0; /* Ubicación superior */
+    left: 0; /* Ubicación izquierda */
+    background: radial-gradient(circle at 300px 400px, transparent 10%, rgb(85, 25, 25) 10px);    
+}

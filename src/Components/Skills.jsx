@@ -1,24 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css"
 // Import Swiper styles
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import ScrollReveal from 'scrollreveal';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Skills = () => {
+
+    useEffect(() => {
+        ScrollReveal().reveal('.skills', {
+            duration: 3000,
+            origin: 'bottom',
+            distance: '500px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            reset: true,
+        })
+    }, [])
     return (
         <main
             id='skills'
             className='
-            text-white pt-12 mx-auto sm:w-full xl:max-w-[1200px] '>
-
+            text-white pt-12 mx-auto sm:w-full xl:max-w-[1200px]'>
             <h1
                 className='text-2xl px-2 py-4
             text-center sm:text-2xl font-extrabold' >Mis <span className='underline' >Habilidades</span></h1>
 
-            <article className='relative'>
+            <article className='relative skills'>
 
                 <div className='lg:bg-fuchsia-950 rounded-full absolute left-1/2 -translate-x-1/2 top-[45%] 
                 -translate-y-1/2 w-[230px] sm:w-[300px] aspect-square flex justify-center m-auto '>

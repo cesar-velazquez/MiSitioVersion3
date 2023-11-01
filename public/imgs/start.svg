@@ -1,0 +1,24 @@
+<svg width="148" height="194" viewBox="0 0 148 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="148" height="194" fill="#0A0514"/>
+<g id="Thumbnail">
+<rect x="-1451" y="-390" width="1896" height="1056" fill="#0A0514"/>
+<g id="Stars" clip-path="url(#clip0_73_72)">
+<path id="Vector 391" d="M3.67188 96.3552C27.9625 97.3576 75.5385 80.2161 71.518 3.63077C74.5334 36.0425 76.0411 96.3552 144.39 100.866C92.1232 100.866 71.518 115.101 71.518 190.082C71.3505 158.84 57.5467 96.3552 3.67188 96.3552Z" stroke="url(#paint0_linear_73_72)" stroke-width="7.0359" stroke-linejoin="round"/>
+</g>
+<rect x="-1451" y="-390" width="1896" height="1056" stroke="url(#paint1_linear_73_72)" stroke-width="24"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_73_72" x1="127.682" y1="96.8563" x2="3.67187" y2="96.8563" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FEBD81"/>
+<stop offset="0.489583" stop-color="#FFE598"/>
+<stop offset="1" stop-color="#BFF4A6"/>
+</linearGradient>
+<linearGradient id="paint1_linear_73_72" x1="229.032" y1="137.999" x2="-1463" y2="137.999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DBA6F4"/>
+<stop offset="1" stop-color="#A981FE"/>
+</linearGradient>
+<clipPath id="clip0_73_72">
+<rect width="686" height="837.272" fill="white" transform="translate(-422 -218)"/>
+</clipPath>
+</defs>
+</svg>
