@@ -20,9 +20,19 @@ const NavBar = ({ handleChangeMode, isDark }) => {
     }, [])
     return (
         <header className='z-50 bg-gray-900 text-white font-bold p-4 flex justify-between items-center fixed w-[min(100%,_1200px)]
-        navbar dark:bg-[#F5ECD7] dark:border-b dark:border-black '>
-            <nav className='text-2xl dark:text-black '>
+        navbar dark:bg-[#F5ECD7] dark:border-b dark:border-black transition-colors duration-1000 '>
+            <nav className='text-2xl dark:text-black flex items-center gap-4 '>
                 <a href="#About">Cv <span className='text-red-600 text-2xl' >.</span></a>
+                <div>
+                <li className='hidden md:block list-none' onClick={handleChangeMode}>
+                                        {
+                                            isDark ?
+                                                <i className='bx bx-moon bx-tada duration'></i>
+                                                :
+                                                <i className='bx bx-sun text-yellow-500 bx-spin duration'></i>
+                                        }
+                                    </li>
+                </div>
             </nav>
             <nav>
                 <div className='md:hidden'>
@@ -35,7 +45,7 @@ const NavBar = ({ handleChangeMode, isDark }) => {
                                 transition-all duration-1000 dark:text-black dark:border-black '></i>
                                 :
                                 // < IconMenu2 />
-                                <i class='bx bx-menu dark:text-black text-[1.5rem] '></i>
+                                <i className='bx bx-menu dark:text-black text-[1.5rem] '></i>
                         }
                     </button>
                 </div>
@@ -43,9 +53,9 @@ const NavBar = ({ handleChangeMode, isDark }) => {
                     isOpen && (
                         <div className='absolute top-0 bottom-0 right-0 w-[210px]
                         md:hidden
-                        bg-gray-900 min-h-screen transition duration-1000
+                        bg-gray-900 min-h-screen transition-colors duration-1000
                         p-8 grid justify-center items-center
-                        dark:bg-[#F5ECD7] dark:text-black '>
+                        dark:bg-[#F5ECD7] dark:text-black  '>
                             <ul className='grid gap-4'>
                                 {/* <div className='bg-red-800 p-4 '> */}
                                 <div className='grid gap-4'>
@@ -66,9 +76,9 @@ const NavBar = ({ handleChangeMode, isDark }) => {
                                     <li onClick={handleChangeMode}>
                                         {
                                             isDark ?
-                                                <i class='bx bx-moon bx-tada duration'></i>
+                                                <i className='bx bx-moon bx-tada duration'></i>
                                                 :
-                                                <i class='bx bx-sun bx-spin duration'></i>
+                                                <i className='bx bx-sun bx-spin duration'></i>
                                         }
                                     </li>
                                 </div>
@@ -84,7 +94,7 @@ const NavBar = ({ handleChangeMode, isDark }) => {
                     // )
                 }
                 <div>
-                    <ul className='hidden md:block dark:text-black'>
+                    <ul className='hidden md:block dark:text-black transition-colors duration-1000 '>
                         <div className='flex gap-2'>
                             <div className='flex gap-2 '>
                                 <li><a href="#contact">Contáctame</a></li>

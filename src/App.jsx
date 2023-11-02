@@ -29,7 +29,8 @@ function App() {
   return (
     <>
       {/* bg-[url(/imgs/fondoweb.jpg)] bg-cover bg-no-repeat */}
-      <main className="bg-gray-800 dark:bg-[#F5ECD7] dark:duration min-h-screen font-Poppins relative">
+      <main className="bg-gray-800 dark:bg-[#c2baa6] min-h-screen font-Poppins relative 
+      transition-colors duration-1000">
         {/* <div className='bg-green-600 min-h-[100%] '> */}
         {/* <div className='puntero '> */}
         <section className="max-w-[1200px] mx-auto ">

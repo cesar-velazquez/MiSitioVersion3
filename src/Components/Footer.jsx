@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className='py-4 mt-3 text-white '>        
+        <footer className='py-4 mt-3 text-white dark:text-black '>        
             <div className=''>
                 <ul className='flex justify-center gap-4 p-4' >
                     <li><a href="https://github.com/cesar-velazquez" target="_blank">

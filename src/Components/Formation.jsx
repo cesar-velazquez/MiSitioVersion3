@@ -34,8 +34,9 @@ const Formation = () => {
 
 
                 <article className=' grid m-auto bg-gray-950 rounded-2xl min-h-[700px]
-                dark:bg-[#c2baa6] duration '>
-                    <h1 className='text-white text-2xl text-center pt-4 ' >Educación</h1>
+                dark:bg-[#ebe2cd] dark:text-black duration '>
+                    <h1 className='text-white text-2xl text-center pt-4
+                    dark:text-black ' >Educación</h1>
                     <article className='flex gap-4 pb-12 pt-4  '>
                         <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative
                         dark:bg-[#1e295a] duration' >
@@ -97,8 +98,9 @@ const Formation = () => {
                 </article>
                 {/* -------------------------------------------------------------------------------------------------------- */}
                 <article className='grid m-auto bg-gray-950 rounded-2xl min-h-[700px]
-                dark:bg-[#c2baa6] duration '>
-                    <h1 className='text-white text-2xl text-center pt-4 ' >Experiencia</h1>
+                dark:bg-[#ebe2cd] dark:text-black duration '>
+                    <h1 className='text-white text-2xl text-center pt-4
+                    dark:text-black ' >Experiencia</h1>
                     <article className='flex gap-4 pb-12 pt-4 '>
                         <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative 
                         dark:bg-[#1e295a] duration ' >
