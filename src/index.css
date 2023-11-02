@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     scroll-margin-top: 3rem;
+}
+
+.duration{
+    @apply dark:transition duration-1000 dark:duration-1000
 }

@@ -26,12 +26,13 @@ const Projects = () => {
         <main
             id='project'
             className='p-4 text-white'>
-            <div className='flex gap-4 justify-center items-center p-4 py-5'>
+            <div className='flex gap-4 justify-center items-center p-4 py-5 
+            dark:text-black duration'>
                 <div>
                     <img className='bx-burst duration ' src="/imgs/project.svg" alt="Icon_Projects" />
                 </div>
                 <div>
-                    <h1 className='text-2xl text-center sm:text-4xl font-bold my-4'>Proyectos</h1>
+                    <h1 className='text-2xl text-center sm:text-2xl font-bold my-4 '>Proyectos</h1>
                 </div>
             </div>
             <div className='grid sm:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 pb-6 projects'>

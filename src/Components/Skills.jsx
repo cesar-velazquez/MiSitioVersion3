@@ -23,7 +23,7 @@ const Skills = () => {
         <main
             id='skills'
             className='
-            text-white pt-12 mx-auto sm:w-full xl:max-w-[1200px]'>
+            text-white pt-12 mx-auto sm:w-full xl:max-w-[1200px] dark:text-black duration '>
             <h1
                 className='text-2xl px-2 py-4
             text-center sm:text-2xl font-extrabold' >Mis <span className='underline' >Habilidades</span></h1>

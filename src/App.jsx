@@ -11,28 +11,36 @@ import './puntero.js'
 import { puntero } from './puntero.js'
 
 function App() {
+  const [isDark, setIsDark] = useState(localStorage.getItem('theme') === 'dark')
+
+  const handleChangeMode = () => {
+    setIsDark(!isDark)
+  }
 
   useEffect(() => {
     // puntero()
-  }, []);
+    isDark
+    ? (document.documentElement.classList.add('dark'), localStorage.setItem('theme', 'dark'))
+    : (document.documentElement.classList.remove('dark'), localStorage.setItem('theme', 'light'))
+  }, [isDark]);
 
 
 
   return (
     <>
       {/* bg-[url(/imgs/fondoweb.jpg)] bg-cover bg-no-repeat */}
-      <main className="bg-gray-800 min-h-screen font-Poppins relative">
+      <main className="bg-gray-800 dark:bg-[#F5ECD7] dark:duration min-h-screen font-Poppins relative">
         {/* <div className='bg-green-600 min-h-[100%] '> */}
-          {/* <div className='puntero '> */}
-          <section className="max-w-[1200px] mx-auto ">
-            <NavBar />
-            <About />
-            <Skills />
-            <Formation />
-            <Projects />
-            <Contact />
-            <Footer />
-          </section>
+        {/* <div className='puntero '> */}
+        <section className="max-w-[1200px] mx-auto ">
+          <NavBar isDark={isDark} handleChangeMode={handleChangeMode} />
+          <About />
+          <Skills />
+          <Formation />
+          <Projects />
+          <Contact />
+          <Footer />
+        </section>
         {/* </div> */}
         {/* <div className='puntero'>          
         </div> */}

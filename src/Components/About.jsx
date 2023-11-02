@@ -17,7 +17,7 @@ const About = () => {
         <main
         id='About'
         className='pt-24 pb-12 p-4 text-white
-        xl:grid xl:grid-cols-3 xl:h-[600px]  
+        xl:grid xl:grid-cols-3 xl:h-[600px] dark:text-black dark:duration  
         about
         '>
             <section className='grid  grid-cols-2 xl:grid-cols-1 pb-8
@@ -73,10 +73,10 @@ const About = () => {
             <section className=' py-4 my-4 border block mx-auto text-left w-[min(100%,650px)] p-4
             rounded-3xl xl:grid xl:justify-center xl:p-10
             xl:bg-[url(/imgs/frame.png)] xl:border-none 
-            xl:bg-no-repeat xl:bg-contain bg-center xl:m-0  '>
+            xl:bg-no-repeat xl:bg-contain bg-center xl:m-0 dark:border-black '>
                 <section className='grid  gap-2 xl:w-[280px] 
                 xl:text-center xl:px-8 '>
-                    <h1 className='text-sm text-[1rem]  text-center font-semibold p-1'>Hola, mucho gusto!</h1>
+                    <h1 className='text-sm text-[1rem]  text-center font-semibold p-1 '>Hola, mucho gusto!</h1>
                     <p className='text-sm text-[1rem] '>Soy un joven apasionado por aprender y sumergirme en el mundo de las
                         tecnologías del desarrollo de software.</p>
                     <p className='text-sm text-[1rem] ' >Actualmente me encuentro capacitándome en un bootcamp y en diferentes cursos

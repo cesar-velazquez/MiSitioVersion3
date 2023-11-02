@@ -15,7 +15,7 @@ const Contact = () => {
                 // setIsShowModal(true);
             })
             .catch((error) => {
-                console.log(error.text);                                  
+                console.log(error.text);
                 // setIsShowModal(false);
                 console.log("error")
             });
@@ -82,7 +82,8 @@ const Contact = () => {
                     border-black w-[min(100%,_450px)] grid m-auto 
                     justify-start items-center text-3xl sm:text-5xl
                     bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black
-                    rounded-2xl ' >
+                    rounded-2xl
+                    dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-blue-700 dark:via-blue-800 dark:to-gray-900 ' >
                         <span className='text-center py-4 sm:font-bold' >Hablemos!</span>
                         <span className=' text-xl sm:text-2xl text-center sm:font-medium '>
                             Preguntame cualquier cosa o simplemente saluda...
@@ -91,12 +92,13 @@ const Contact = () => {
 
                 <article className='px-4 mt-8 min-h-[450px] h-[500px] grid ' >
                     <form
-                    ref={form}
+                        ref={form}
                         onSubmit={handleSubmit(submit)}
                         className='p-4  pt-12 w-[min(100%,_300px)] grid items-center m-auto 
                         bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black
                     rounded-xl h-[100%] gap-8 shadow-2xl shadow-black text-black
-                    text-xs '
+                    text-xs
+                    dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-blue-700 dark:via-blue-800 dark:to-gray-900 '
                         action="">
                         <section className='grid gap-4 py-4 '>
                             <div
@@ -156,7 +158,7 @@ const Contact = () => {
                                             message: "esriba un email valido"
                                         }
                                     })} />
-                                    {errors.email_i && <p className='text-red-700 text-center m-auto font-semibold rounded-3xl w-[200px] bg-white/40'>{errors.email_i.message}</p>}
+                                {errors.email_i && <p className='text-red-700 text-center m-auto font-semibold rounded-3xl w-[200px] bg-white/40'>{errors.email_i.message}</p>}
                             </div>
 
                             <div
@@ -186,7 +188,7 @@ const Contact = () => {
                                             message: "Es demasiado corto el nombre"
                                         }
                                     })
-                
+
                                     }>
                                     {errors.message && <p className='text-red-700 text-center m-auto font-semibold rounded-3xl w-[200px] bg-white/40'>{errors.message.message}</p>}
                                 </textarea>
@@ -194,7 +196,7 @@ const Contact = () => {
                             <input className='border rounded-md w-[100px] m-auto
                         hover:bg-gray-700 hover:text-white transition hover:scale-105
                         duration-700 text-white '
-                        type='submit' value={'Enviar'}  />
+                                type='submit' value={'Enviar'} />
                         </section>
 
                     </form>

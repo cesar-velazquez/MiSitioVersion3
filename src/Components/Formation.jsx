@@ -14,10 +14,11 @@ const Formation = () => {
         })
     }, [])
     return (
-        <main 
-        id='formation'
-        className='pb-14 text-white  ' >
-            <div className='text-white flex justify-center items-center p-4 py-6 mt-8 mb-6 '>
+        <main
+            id='formation'
+            className='pb-14 text-white ' >
+            <div className='text-white flex justify-center items-center p-4 py-6 mt-8 mb-6 
+            dark:text-black duration  '>
                 <div>
                     <img className='bx-spin duration' src="/imgs/Diagonal.png" alt="" />
                 </div>
@@ -32,15 +33,22 @@ const Formation = () => {
             sm:bg-[url(/imgs/Cuadrado.png)] bg-no-repeat bg-center formation  '>
 
 
-                <article className=' grid m-auto bg-gray-950 rounded-2xl min-h-[700px] '>
+                <article className=' grid m-auto bg-gray-950 rounded-2xl min-h-[700px]
+                dark:bg-[#c2baa6] duration '>
                     <h1 className='text-white text-2xl text-center pt-4 ' >Educación</h1>
                     <article className='flex gap-4 pb-12 pt-4  '>
-                        <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative' >
-                            <div className='absolute top-[-10px] left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full '></div>
-                            <div className='absolute top-[50px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full '></div>
-                            <div className='absolute top-[255px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full '></div>
-                            <div className='absolute top-[434px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full '></div>
-                            <div className='absolute bottom-0 left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full '></div>
+                        <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative
+                        dark:bg-[#1e295a] duration' >
+                            <div className='absolute top-[-10px] left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full 
+                            dark:bg-[#1e295a] duration'></div>
+                            <div className='absolute top-[50px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full 
+                            dark:bg-rose-600 duration'></div>
+                            <div className='absolute top-[255px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full 
+                            dark:bg-rose-600 duration'></div>
+                            <div className='absolute top-[434px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full 
+                            dark:bg-rose-600 duration'></div>
+                            <div className='absolute bottom-0 left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full 
+                            dark:bg-[#1e295a] duration'></div>
                         </div>
 
                         <section className='grid gap-5'>
@@ -52,7 +60,8 @@ const Formation = () => {
                                         src="./elipse.png" alt="Animate" />
                                 </div>
                                 <h1 className='py-2 my-3 text-white border-[1px] border-gray-500 px-4 mx-4 text-center 
-                                rounded-xl h-[66px] grid justify-center items-center bg-black relative '
+                                rounded-xl h-[66px] grid justify-center items-center bg-black relative 
+                                dark:bg-[#833500] duration '
                                 >Instituto Tecnológico Superior de Xalapa</h1>
                             </article>
 
@@ -66,7 +75,8 @@ const Formation = () => {
                                 </div>
 
                                 <h1 className='py-2 my-3 text-white border px-4 mx-4 text-center 
-                                rounded-xl bg-black relative '>Bootcamp Alura </h1>
+                                rounded-xl bg-black relative 
+                                dark:bg-[#833500] duration '>Bootcamp Alura </h1>
                             </article>
 
                             <article className='relative'>
@@ -79,20 +89,27 @@ const Formation = () => {
                                 </div>
 
                                 <h1 className='py-2 my-3 text-white border px-4 mx-4 text-center 
-                                rounded-xl bg-black relative '>Bootcamp Academlo </h1>
+                                rounded-xl bg-black relative 
+                                dark:bg-[#833500] duration'>Bootcamp Academlo </h1>
                             </article>
                         </section>
                     </article>
                 </article>
                 {/* -------------------------------------------------------------------------------------------------------- */}
-                <article className='grid m-auto bg-gray-950 rounded-2xl min-h-[700px] '>
+                <article className='grid m-auto bg-gray-950 rounded-2xl min-h-[700px]
+                dark:bg-[#c2baa6] duration '>
                     <h1 className='text-white text-2xl text-center pt-4 ' >Experiencia</h1>
                     <article className='flex gap-4 pb-12 pt-4 '>
-                        <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative' >
-                            <div className='absolute top-[-10px] left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full '></div>
-                            <div className='absolute top-[50px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full '></div>
-                            <div className='absolute top-[344px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full '></div>
-                            <div className='absolute bottom-0 left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full '></div>
+                        <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative 
+                        dark:bg-[#1e295a] duration ' >
+                            <div className='absolute top-[-10px] left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full 
+                            dark:bg-[#1e295a] duration '></div>
+                            <div className='absolute top-[50px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full 
+                            dark:bg-rose-600 duration'></div>
+                            <div className='absolute top-[344px] left-[-9px] w-[20px] aspect-square border-4 bg-black/80 rounded-full 
+                            dark:bg-rose-600 duration'></div>
+                            <div className='absolute bottom-0 left-[-9px] w-[20px] aspect-square bg-rose-600 rounded-full 
+                            dark:bg-[#1e295a] duration '></div>
                         </div>
 
                         <section className='grid gap-5 '>
@@ -105,7 +122,7 @@ const Formation = () => {
                                 </div>
                                 <h1 className='py-2 my-3 text-white border px-4 mx-4 text-center rounded-xl 
                                 grid justify-center items-center max-w-[357.52px] h-[160px] bg-black
-                                relative'>
+                                relative dark:bg-[#833500] duration'>
                                     Becario en Universidad de Xalapa en el área de Coordinación de Tecnologías de la Información.
                                 </h1>
                             </article>
@@ -119,7 +136,7 @@ const Formation = () => {
                                 </div>
                                 <h1 className='py-2 my-3 text-white border px-4 mx-4 text-center rounded-xl 
                                 grid justify-center items-center max-w-[357.52px] h-[160px] bg-black
-                                relative'>
+                                relative dark:bg-[#833500] duration'>
                                     Soporte técnico en el área de Coordinación de Tecnologías de la Información.
                                 </h1>
                             </article>
