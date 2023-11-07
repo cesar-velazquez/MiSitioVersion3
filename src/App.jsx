@@ -11,21 +11,27 @@ import './puntero.js'
 import { puntero } from './puntero.js'
 import { useTranslation } from 'react-i18next'
 import i18n from './i18n.js';
+import { Route, Routes } from 'react-router-dom'
+import Inicio from './Pages/Inicio.jsx'
+import ContactMe from './Pages/ContactMe.jsx'
+import MySkills from './Pages/MySkills.jsx'
+import MyFormation from './Pages/MyFormation.jsx'
+import MyProjects from './Pages/MyProjects.jsx'
 
 function App() {
   const [isDark, setIsDark] = useState(localStorage.getItem('theme') === 'dark')
   const [isEnglish, setIsEnglish] = useState('es')
 
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   const handleChangeLanguage = () => {
     if (isEnglish === 'en') {
       setIsEnglish('es');
-      i18n.changeLanguage('es');      
+      i18n.changeLanguage('es');
     } else {
       setIsEnglish('en');
       i18n.changeLanguage('en');
-    }           
+    }
   }
 
 
@@ -52,11 +58,25 @@ function App() {
         <section className="max-w-[1200px] mx-auto ">
           <NavBar isDark={isDark} handleChangeMode={handleChangeMode}
             handleChangeLanguage={handleChangeLanguage} isEnglish={isEnglish} t={t} />
-          <About />
-          <Skills />
-          <Formation />
-          <Projects />
-          <Contact />
+
+
+          <Routes>
+            <Route path='/' element={<Inicio />} />
+            <Route path='/contact' element={<ContactMe />} />
+            <Route path='/Skills' element={<MySkills />} />
+            <Route path='/Formation' element={<MyFormation />} />
+            <Route path='/Projects' element={<MyProjects />}/>
+          </Routes>
+
+
+          {/* <NavBar isDark={isDark} handleChangeMode={handleChangeMode}
+            handleChangeLanguage={handleChangeLanguage} isEnglish={isEnglish} t={t} /> */}
+          {/* <About /> */}
+          {/* <Skills /> */}
+          {/* <Formation /> */}
+
+          {/* <Projects /> */}
+          {/* <Contact /> */}
           <Footer />
         </section>
         {/* </div> */}

@@ -17,8 +17,8 @@ const Formation = () => {
     return (
         <main
             id='formation'
-            className='pb-14 text-white ' >
-            <div className='text-white flex justify-center items-center p-4 py-6 mt-8 mb-6 
+            className='pt-16 text-white ' >
+            <div className='text-white flex justify-center items-center p-4 py-6 mb-4 
             dark:text-black duration  '>
                 <div>
                     <img className='bx-spin duration' src="/imgs/Diagonal.png" alt="" />

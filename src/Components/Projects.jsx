@@ -26,7 +26,7 @@ const Projects = () => {
     return (
         <main
             id='project'
-            className='p-4 text-white'>
+            className='p-4 text-white pt-14'>
             <div className='flex gap-4 justify-center items-center p-4 py-5 
             dark:text-black duration'>
                 <div>

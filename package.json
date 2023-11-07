@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.47.0",
     "react-i18next": "^13.3.1",
+    "react-router-dom": "^6.18.0",
     "scrollreveal": "^4.0.9",
     "swiper": "^10.3.1",
     "tailwindcss-animated": "^1.0.1"

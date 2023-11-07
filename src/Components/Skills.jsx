@@ -24,7 +24,7 @@ const Skills = () => {
         <main
             id='skills'
             className='
-            text-white pt-12 mx-auto sm:w-full xl:max-w-[1200px] dark:text-black duration '>
+            text-white pt-16 mx-auto sm:w-full xl:max-w-[1200px] dark:text-black duration '>
             <h1
                 className='text-2xl px-2 py-4
             text-center sm:text-2xl font-extrabold' >{t('My')} <span className='underline' >{t('Skills')}</span></h1>
@@ -129,7 +129,7 @@ const Skills = () => {
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square rounded-full
                             hover:scale-110 ' src="/imgs/skills/css.jpg" alt="CSS" />
                                 <h1 className='text-center underline font-bold
-                        p-4  text-2xl ' >CSS</h1>
+                        p-4  text-2xl dark:text-white ' >CSS</h1>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -137,7 +137,7 @@ const Skills = () => {
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square rounded-full hover:scale-110 '
                                     src="/imgs/skills/html5.jpg" alt="HTML" />
                                 <h1 className='text-center underline font-bold
-                        p-4  text-2xl ' >HTML</h1>
+                        p-4  text-2xl dark:text-white ' >HTML</h1>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -145,7 +145,7 @@ const Skills = () => {
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square rounded-full hover:scale-110 '
                                     src="/imgs/skills/js.jpg" alt="HTML" />
                                 <h1 className='text-center underline font-bold
-                        p-4  text-2xl ' >JS</h1>
+                        p-4  text-2xl dark:text-white ' >JS</h1>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -155,7 +155,7 @@ const Skills = () => {
                         rounded-full hover:scale-110 object-cover '
                                     src="/imgs/skills/react.jpg" alt="HTML" />
                                 <h1 className='text-center underline font-bold
-                        p-4  text-2xl ' >React</h1>
+                        p-4  text-2xl dark:text-white ' >React</h1>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -164,7 +164,7 @@ const Skills = () => {
                         rounded-full hover:scale-110  '
                                     src="/imgs/skills/tailwind.jpg" alt="Tailwind" />
                                 <h1 className='text-center underline font-bold
-                        p-4  text-2xl ' >Tailwind</h1>
+                        p-4  text-2xl dark:text-white ' >Tailwind</h1>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -173,7 +173,7 @@ const Skills = () => {
                         rounded-full hover:scale-110  '
                                     src="/imgs/skills/github.jpg" alt="HTML" />
                                 <h1 className='text-center underline font-bold
-                        p-4  text-2xl ' >Github</h1>
+                        p-4  text-2xl dark:text-white ' >Github</h1>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -182,7 +182,7 @@ const Skills = () => {
                         rounded-full hover:scale-110  '
                                     src="/imgs/skills/sql.jpg" alt="Sql" />
                                 <h1 className='text-center underline font-bold
-                        p-4  text-2xl ' >Sql</h1>
+                        p-4  text-2xl dark:text-white ' >Sql</h1>
                             </div>
                         </SwiperSlide>
                     </div>

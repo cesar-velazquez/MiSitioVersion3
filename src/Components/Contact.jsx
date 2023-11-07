@@ -42,20 +42,20 @@ const Contact = () => {
         let email = document.getElementById("email");
         let message = document.getElementById("message")
 
-        if (name.contains(e.target)) {
+        if (name && name.contains(e.target)) {
             setIsClick(true)
         }
         else {
             setIsClick(false)
         }
 
-        if (email.contains(e.target)) {
+        if (email && email.contains(e.target)) {
             setEmail(true)
         } else {
             setEmail(false)
         }
 
-        if (message.contains(e.target)) {
+        if (message && message.contains(e.target)) {
             setMessage(true)
         } else {
             setMessage(false)
@@ -76,7 +76,7 @@ const Contact = () => {
     return (
         <main
             id='contact'
-            className='text-white pb-8 Contactme '>
+            className='text-white pb-6 Contactme pt-20 '>
             <section className='sm:grid sm:grid-cols-2 sm:gap-6  ' >
                 <article className='grid px-4 ' >
                     <h1 className='p-4 border 

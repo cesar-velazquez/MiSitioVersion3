@@ -1,8 +1,10 @@
 import { IconMenu2 } from '@tabler/icons-react'
 import React, { useEffect, useState } from 'react'
 import ScrollReveal from 'scrollreveal';
+import { t } from 'i18next';
+import { Link } from 'react-router-dom';
 
-const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage, isEnglish, t }) => {
+const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const handleOpen = () => {
@@ -22,18 +24,18 @@ const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage, isEnglish, t }
         <header className='z-50 bg-gray-900 text-white font-bold p-4 flex justify-between items-center fixed w-[min(100%,_1200px)]
         navbar dark:bg-[#F5ECD7] dark:border-b dark:border-black transition-colors duration-1000 '>
             <nav className='text-2xl dark:text-black flex items-center gap-4 '>
-                <a href="#About">Cv <span className='text-red-600 text-2xl' >.</span></a>
+                <Link to={'/'} >Cv <span className='text-red-600 text-2xl' >.</span></Link>
                 <div className='flex items-center gap-4'>
-                <li className='hidden md:block list-none' onClick={handleChangeMode}>
-                                        {
-                                            isDark ?
-                                                <i className='cursor-pointer bx bx-moon bx-tada duration'></i>
-                                                :
-                                                <i className='cursor-pointer bx bx-sun text-yellow-500 bx-spin duration'></i>
-                                        }
-                                    </li>
-                                    <button onClick={handleChangeLanguage} 
-                                    className='hidden md:block hover:bg-black hover:text-white border 
+                    <li className='hidden md:block list-none' onClick={handleChangeMode}>
+                        {
+                            isDark ?
+                                <i className='cursor-pointer bx bx-moon bx-tada duration'></i>
+                                :
+                                <i className='cursor-pointer bx bx-sun text-yellow-500 bx-spin duration'></i>
+                        }
+                    </li>
+                    <button onClick={handleChangeLanguage}
+                        className='hidden md:block hover:bg-black hover:text-white border 
                                     border-black rounded-xl px-2 py-1 transition-colors 
                                     duration-700 text-sm '>{t('buttonChange')}</button>
                 </div>
@@ -63,10 +65,10 @@ const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage, isEnglish, t }
                             <ul className='grid gap-4'>
                                 {/* <div className='bg-red-800 p-4 '> */}
                                 <div className='grid gap-4'>
-                                    <li className='hover:scale-105'><a href="#contact">{t('Contact')}</a></li>
-                                    <li className='hover:scale-105'><a href="#project">{t ('Projects')}</a></li>
-                                    <li className='hover:scale-105'><a href="#formation">{t ('formation')}</a></li>
-                                    <li className='hover:scale-105'><a href="#skills">{t ('Skills')}</a></li>
+                                    <li className='hover:scale-105'><Link to={'contact'}>{t('Contact')}</Link></li>
+                                    <li className='hover:scale-105'><Link to={'Projects'}>{t('Projects')}</Link></li>
+                                    <li className='hover:scale-105'><Link to={'Formation'}>{t('formation')}</Link></li>
+                                    <li className='hover:scale-105'><Link to={'Skills'}>{t('Skills')}</Link></li>
                                 </div>
                                 <div className='flex gap-4 justify-center '>
                                     <li><a href="https://github.com/cesar-velazquez" target="_blank">
@@ -87,9 +89,10 @@ const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage, isEnglish, t }
                                     </li>
                                 </div>
                                 <div className='flex justify-center '>
-                                    <button onClick={handleChangeLanguage} className='hover:bg-black hover:text-white border border-black rounded-xl
+                                    <button onClick={handleChangeLanguage} 
+                                    className='hover:bg-black hover:text-white border border-black rounded-xl
                                     px-4 py-1 transition-colors duration-700 '>{t('buttonChange')}</button>
-                                </div>                                
+                                </div>
                             </ul>
                         </div>
                     )
@@ -98,10 +101,10 @@ const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage, isEnglish, t }
                     <ul className='hidden md:block dark:text-black transition-colors duration-1000 '>
                         <div className='flex gap-2'>
                             <div className='flex gap-2 '>
-                                <li><a href="#contact">{t('Contact')}</a></li>
-                                <li><a href="#project">{t ('Projects')}</a></li>
-                                <li><a href="#formation">{t ('formation')}</a></li>
-                                <li><a href="#skills">{t ('Skills')}</a></li>
+                                <li><Link to={'contact'} className=''>{t('Contact')}</Link></li>
+                                <li><Link to={'Projects'}>{t('Projects')}</Link></li>
+                                <li><Link to={'Formation'} >{t('formation')}</Link></li>
+                                <li><Link to={'Skills'} >{t('Skills')}</Link></li>
                             </div>
                             <span> | </span>
                             <div className='flex gap-2 animate-pulse'>
