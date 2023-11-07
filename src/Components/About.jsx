@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import '../Components/css/About.css'
 import ScrollReveal from 'scrollreveal';
+import { t } from 'i18next'
 
 const About = () => {
 
@@ -30,7 +31,7 @@ const About = () => {
                     <div>
                         <img className='animate-zoomInOut  absolute top-0 left-1 -translate-x-1/2 ' src="./animate.png" alt="" />
                     </div>
-                    <h1 className='text-sm grid  ' >Hola, mi nombre es...
+                    <h1 className='text-sm grid  ' >{t('Greeting')}
                         <span className='text-lg sm:text-4xl'> César</span>
                         <span className='text-lg sm:text-4xl' >Velazquez<span className='text-lg sm:text-4xl '>.</span> </span></h1>
 
@@ -51,7 +52,7 @@ const About = () => {
                         font-semibold p-2 hover:bg-red-600 hover:text-gray-800 text-[10px]
                         sm:text-[.75rem]
                         transition-colors duration-700  '  href="/cv/César Velazquez Ortiz CV.pdf"
-                                target='_blank'>Descargar Cv <i className='bx bxs-download dark:hover:text-yellow-200 hover:text-blue-500 '></i> </a>
+                                target='_blank'>{t('Download')} <i className='bx bxs-download dark:hover:text-yellow-200 hover:text-blue-500 '></i> </a>
                         </section>
                     </article>
                 </section>
@@ -88,11 +89,9 @@ const About = () => {
             xl:bg-no-repeat xl:bg-contain bg-center xl:m-0 dark:border-black '>
                 <section className='grid  gap-2 xl:w-[280px] 
                 xl:text-center xl:px-8 '>
-                    <h1 className='text-sm text-[1rem]  text-center font-semibold p-1 '>Hola, mucho gusto!</h1>
-                    <p className='text-sm text-[1rem] '>Soy un joven apasionado por aprender y sumergirme en el mundo de las
-                        tecnologías del desarrollo de software.</p>
-                    <p className='text-sm text-[1rem] ' >Actualmente me encuentro capacitándome en un bootcamp y en diferentes cursos
-                        de tecnología con el fin de especializarme y obtener mi primer trabajo como desarrollador.</p>
+                    <h1 className='text-sm text-[1rem]  text-center font-semibold p-1 '>{t('Greeting2')}</h1>
+                    <p className='text-sm text-[1rem] '>{t('Greeting3')}</p>
+                    <p className='text-sm text-[1rem] ' >{t('Greeting4')}</p>
                 </section>
             </section>
         </main>

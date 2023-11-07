@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import ScrollReveal from 'scrollreveal';
 import { useForm } from 'react-hook-form';
 import emailjs, { sendForm } from '@emailjs/browser';
+import { t } from 'i18next';
 
 const Contact = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -84,9 +85,9 @@ const Contact = () => {
                     bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black
                     rounded-2xl
                     dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-blue-700 dark:via-blue-800 dark:to-gray-900 ' >
-                        <span className='text-center py-4 sm:font-bold' >Hablemos!</span>
+                        <span className='text-center py-4 sm:font-bold' >{t('Talks')}!</span>
                         <span className=' text-xl sm:text-2xl text-center sm:font-medium '>
-                            Preguntame cualquier cosa o simplemente saluda...
+                            {t('Askme')}
                         </span> </h1>
                 </article>
 
@@ -107,7 +108,7 @@ const Contact = () => {
                                 <label
                                     className='text-white'
 
-                                    htmlFor="first_name">Ingresa un nombre</label>
+                                    htmlFor="first_name">{t('SayName')}</label>
                                 <input
                                     className={`rounded-md text-white py-3 px-2 bg-black/30
                                     border border-black outline-none
@@ -115,7 +116,7 @@ const Contact = () => {
                                     name='first_name'
                                     id='first_name'
                                     type="text"
-                                    placeholder='Escribe tu nombre'
+                                    placeholder={t('WriteName')}
                                     {...register("first_name", {
                                         required: {
                                             value: true,
@@ -140,14 +141,14 @@ const Contact = () => {
 
                                 <label
                                     className='text-white'
-                                    htmlFor="email_i">Escribe tu email</label>
+                                    htmlFor="email_i">{t('SayEmail')}</label>
                                 <input
                                     className={`rounded-md text-white py-3 px-2 bg-black/30
                                     border border-black outline-none
                                     ${email && "shadow-md shadow-green-600 "} `}
                                     id='email_i'
                                     type="email"
-                                    placeholder='Escribe tu correo'
+                                    placeholder={t('WriteEmail')}
                                     {...register("email_i", {
                                         required: {
                                             value: true,
@@ -168,7 +169,7 @@ const Contact = () => {
                                 <label
                                     className='text-white'
                                     htmlFor="messagge">
-                                    Escribeme
+                                    {t('MessageMe')}
                                 </label>
                                 <textarea
                                     className=
@@ -177,7 +178,7 @@ const Contact = () => {
                                     ${message && "shadow-md shadow-fuchsia-600 "} `}
                                     id="message"
                                     name='message'
-                                    placeholder='Mensaje'
+                                    placeholder={t('Message')}
                                     {...register("message", {
                                         required: {
                                             value: true,
@@ -196,7 +197,7 @@ const Contact = () => {
                             <input className='border rounded-md w-[100px] m-auto
                         hover:bg-gray-700 hover:text-white transition hover:scale-105
                         duration-700 text-white '
-                                type='submit' value={'Enviar'} />
+                                type='submit' value={t('Send')} />
                         </section>
 
                     </form>

@@ -9,9 +9,25 @@ import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 import './puntero.js'
 import { puntero } from './puntero.js'
+import { useTranslation } from 'react-i18next'
+import i18n from './i18n.js';
 
 function App() {
   const [isDark, setIsDark] = useState(localStorage.getItem('theme') === 'dark')
+  const [isEnglish, setIsEnglish] = useState('es')
+
+  const {t} = useTranslation();
+
+  const handleChangeLanguage = () => {
+    if (isEnglish === 'en') {
+      setIsEnglish('es');
+      i18n.changeLanguage('es');      
+    } else {
+      setIsEnglish('en');
+      i18n.changeLanguage('en');
+    }           
+  }
+
 
   const handleChangeMode = () => {
     setIsDark(!isDark)
@@ -20,8 +36,8 @@ function App() {
   useEffect(() => {
     // puntero()
     isDark
-    ? (document.documentElement.classList.add('dark'), localStorage.setItem('theme', 'dark'))
-    : (document.documentElement.classList.remove('dark'), localStorage.setItem('theme', 'light'))
+      ? (document.documentElement.classList.add('dark'), localStorage.setItem('theme', 'dark'))
+      : (document.documentElement.classList.remove('dark'), localStorage.setItem('theme', 'light'))
   }, [isDark]);
 
 
@@ -34,7 +50,8 @@ function App() {
         {/* <div className='bg-green-600 min-h-[100%] '> */}
         {/* <div className='puntero '> */}
         <section className="max-w-[1200px] mx-auto ">
-          <NavBar isDark={isDark} handleChangeMode={handleChangeMode} />
+          <NavBar isDark={isDark} handleChangeMode={handleChangeMode}
+            handleChangeLanguage={handleChangeLanguage} isEnglish={isEnglish} t={t} />
           <About />
           <Skills />
           <Formation />

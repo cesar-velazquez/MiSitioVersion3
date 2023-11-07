@@ -2,7 +2,7 @@
     {
         "image": "/imgs/projects/frontmentor1.PNG",
         "alt": "Image 1",
-        "title": "Primer Challenge de la plataforma de Frontend Mentor",
+        "title": "Project1",
         "technology": [
             "html5",
             "css3"
@@ -13,7 +13,7 @@
     {
         "image": "/imgs/projects/front2.PNG",
         "alt": "Image 2",
-        "title": "Segundo Challenge de la plataforma de Frontend Mentor",
+        "title": "Project2",
         "technology": [
             "html5",
             "css3"
@@ -24,7 +24,7 @@
     {
         "image": "/imgs/projects/FrontMentor3.PNG",
         "alt": "Image 3",
-        "title": "Tercer Challenge de la plataforma de Frontend Mentor",
+        "title": "Project3",
         "technology": [
             "html5",
             "css3"
@@ -35,7 +35,7 @@
     {
         "image": "/imgs/projects/ecommerce.PNG",
         "alt": "ecommerce",
-        "title": "Ecommerce, realizado con Html, Css y Javascript",
+        "title": "Project4",
         "technology": [
             "html5",
             "css3",
@@ -47,7 +47,7 @@
     {
         "image": "/imgs/projects/restandcountries.PNG",
         "alt": "Image 4",
-        "title": "Cuarto Challenge de la plataforma de Frontend Mentor",
+        "title": "Project5",
         "technology": [
             "html5",
             "tailwind",
@@ -59,7 +59,7 @@
     {
         "image": "/imgs/projects/fm5.PNG",
         "alt": "Image FM5",
-        "title": "Newsletter sign-up form with success message",
+        "title": "Project6",
         "technology": [
             "react",
             "tailwind",
@@ -71,7 +71,7 @@
     {
         "image": "/imgs/projects/fm6.PNG",
         "alt": "Image 6",
-        "title": "Interactive card details form",
+        "title": "Project7",
         "technology": [
             "react",
             "js",
@@ -83,7 +83,7 @@
     {
         "image": "/imgs/projects/fm7.PNG",
         "alt": "Image 7",
-        "title": "Dictionary Web",
+        "title": "Project8",
         "technology": [
             "react",
             "tailwind",
@@ -95,7 +95,7 @@
     {
         "image": "/imgs/projects/fm8.PNG",
         "alt": "Image 8",
-        "title": "Intro section with dropdown navigation",
+        "title": "Project9",
         "technology": [
             "react",
             "js",
@@ -107,7 +107,7 @@
     {
         "image": "/imgs/projects/fm9.PNG",
         "alt": "Image 9",
-        "title": "Fylo dark theme landing page",
+        "title": "Project10",
         "technology": [
             "react",
             "js",
@@ -119,7 +119,7 @@
     {
         "image": "/imgs/projects/fm10.PNG",
         "alt": "Image 10",
-        "title": "Anime Search",
+        "title": "Project11",
         "technology": [
             "react",
             "tailwind",
@@ -131,7 +131,7 @@
     {
         "image": "/imgs/projects/phrases.PNG",
         "alt": "Image Phrases",
-        "title": "Frases Aleatorias",
+        "title": "Project12",
         "technology": [
             "js",
             "tailwind",
@@ -143,7 +143,7 @@
     {
         "image": "/imgs/projects/weather.PNG",
         "alt": "Image Weather",
-        "title": "Aplicación del Clima",
+        "title": "Project13",
         "technology": [
             "js",
             "react",
@@ -155,7 +155,7 @@
     {
         "image": "/imgs/projects/rickandmorty.PNG",
         "alt": "Image Rick and Morty",
-        "title": "Consumiendo la Api de Rick and Morty",
+        "title": "Project14",
         "technology": [
             "react",
             "tailwind",
@@ -167,7 +167,7 @@
     {
         "image": "/imgs/projects/crud.PNG",
         "alt": "Image Crud",
-        "title": "Crud",
+        "title": "Project15",
         "technology": [
             "react",
             "tailwind",
@@ -179,7 +179,7 @@
     {
         "image": "/imgs/projects/pokedex.PNG",
         "alt": "Image Pokedex",
-        "title": "Api de pokemon",
+        "title": "Project16",
         "technology": [
             "js",
             "tailwind",
@@ -187,5 +187,17 @@
         ],
         "siteLink": "https://acadpokedex.netlify.app/pokedex",
         "codeLink": "https://github.com/cesar-velazquez/Pokedex"
+    },
+    {
+        "image": "/imgs/projects/crudversion2.PNG",
+        "alt": "Image Crud 2",
+        "title": "Project17",
+        "technology": [
+            "js",
+            "tailwind",
+            "react"
+        ],
+        "siteLink": "https://crudv2.netlify.app/",
+        "codeLink": "https://github.com/cesar-velazquez/crudVersion2"
     }
 ]

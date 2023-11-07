@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import '../Components/css/Formation.css'
 import ScrollReveal from 'scrollreveal';
+import { t } from 'i18next';
 
 const Formation = () => {
 
@@ -24,8 +25,8 @@ const Formation = () => {
                 </div>
 
                 <div>
-                    <p className=' px-4 '>Experiencia Profesional</p>
-                    <h1 className='text-2xl font-bold text-center px-4'>Formación</h1>
+                    <p className=' px-4 '>{t('Professional')}</p>
+                    <h1 className='text-2xl font-bold text-center px-4'>{t('Formation')}</h1>
                 </div>
             </div>
 
@@ -36,7 +37,7 @@ const Formation = () => {
                 <article className=' grid m-auto bg-gray-950 rounded-2xl min-h-[700px]
                 dark:bg-[#ebe2cd] dark:text-black duration '>
                     <h1 className='text-white text-2xl text-center pt-4
-                    dark:text-black ' >Educación</h1>
+                    dark:text-black ' >{t('Education')}</h1>
                     <article className='flex gap-4 pb-12 pt-4  '>
                         <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative
                         dark:bg-[#1e295a] duration' >
@@ -63,7 +64,7 @@ const Formation = () => {
                                 <h1 className='py-2 my-3 text-white border-[1px] border-gray-500 px-4 mx-4 text-center 
                                 rounded-xl h-[66px] grid justify-center items-center bg-black relative 
                                 dark:bg-[#833500] duration '
-                                >Instituto Tecnológico Superior de Xalapa</h1>
+                                >{t('Itsx')}</h1>
                             </article>
 
                             <article className='block relative'>
@@ -82,7 +83,7 @@ const Formation = () => {
 
                             <article className='relative'>
                                 <i className='bx bxs-graduation pl-4 text-white text-2xl pt-4'></i>
-                                <p className='px-4 '>2023 - Actualmente</p>
+                                <p className='px-4 '>2023 - {t('Currently')}</p>
 
                                 <div>
                                     <img className='absolute top-[75px] w-[50px] animate-pulse '
@@ -100,7 +101,7 @@ const Formation = () => {
                 <article className='grid m-auto bg-gray-950 rounded-2xl min-h-[700px]
                 dark:bg-[#ebe2cd] dark:text-black duration '>
                     <h1 className='text-white text-2xl text-center pt-4
-                    dark:text-black ' >Experiencia</h1>
+                    dark:text-black ' >{t('Experience')}</h1>
                     <article className='flex gap-4 pb-12 pt-4 '>
                         <div className='ml-8 w-[3px] bg-rose-600 h-[500px] relative 
                         dark:bg-[#1e295a] duration ' >
@@ -125,7 +126,7 @@ const Formation = () => {
                                 <h1 className='py-2 my-3 text-white border px-4 mx-4 text-center rounded-xl 
                                 grid justify-center items-center max-w-[357.52px] h-[160px] bg-black
                                 relative dark:bg-[#833500] duration'>
-                                    Becario en Universidad de Xalapa en el área de Coordinación de Tecnologías de la Información.
+                                    {t('Becario')}
                                 </h1>
                             </article>
 
@@ -139,7 +140,7 @@ const Formation = () => {
                                 <h1 className='py-2 my-3 text-white border px-4 mx-4 text-center rounded-xl 
                                 grid justify-center items-center max-w-[357.52px] h-[160px] bg-black
                                 relative dark:bg-[#833500] duration'>
-                                    Soporte técnico en el área de Coordinación de Tecnologías de la Información.
+                                    {t('Soporte')}
                                 </h1>
                             </article>
                         </section>
