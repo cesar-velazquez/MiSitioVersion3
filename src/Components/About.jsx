@@ -15,15 +15,17 @@ const About = () => {
         })
     }, [])
     return (
+        // xl:pt-0 xl:grid xl:grid-cols-3 xl:h-[600px]
         <main
             id='About'
-            className='pt-16 xl:pt-0 p-4 text-white
-        xl:grid xl:grid-cols-3 xl:h-[600px] dark:text-black dark:duration  
+            className='pt-16 p-4 text-white            
+    dark:text-black dark:duration  
         about
         '>
-            <section className='grid  grid-cols-2 xl:grid-cols-1 pb-8
+            {/* xl:grid-cols-1  */}
+            <section className='grid  grid-cols-2 pb-8 xl:w-[1200px] 
             '>
-                <section className='grid gap-1 m-auto h-[300px] p-5
+                <section className='grid gap-1 m-auto h-[300px] p-5 
                 sm:w-[280px] sm:gap-4
                 sm:mx-auto sm:text-xl sm:border sm:rounded-2xl sm:h-[300px] sm:p-4
                 md:w-[350px] relative                
@@ -57,7 +59,8 @@ const About = () => {
                     </article>
                 </section>
             
-                <section className='opacity-100 xl:hidden  h-[300px] sm:h-[300px] md:h-[500px] relative '>
+                {/* xl:hidden */}
+                <section className='opacity-100 h-[300px] sm:h-[300px] md:h-[500px] relative '>
                     <div className='h-[100%] w-[100%] relative'>
                         <div className='w-[130px] aspect-square bg-gray-900 dark:bg-gray-800 rounded-full 
                         absolute left-[54%] -translate-x-1/2 top-[56%] -translate-y-[85%] 
@@ -68,22 +71,26 @@ const About = () => {
 
             </section>
             
-            <section className='hidden xl:block h-[400px] relative  '>
+            {/* <section className='hidden xl:block h-[400px] relative  '>
                 <div className=' h-[100%] flex items-start '>
                     <div className='w-[230px] aspect-square bg-gray-900 dark:bg-gray-800 rounded-full
                     absolute left-[50%] -translate-x-[45%] top-[10%] '></div>
                     <img className=' h-[100%] w-[75%] flex justify-center m-auto items-center relative ' src="/imgs/opcion2.png" alt="Photo" />                    
                 </div>
-            </section>
+            </section> */}
 
 
-            <section className=' py-4 my-4 border block mx-auto text-left w-[min(100%,650px)] p-4
-            rounded-3xl xl:grid xl:justify-center xl:p-10
+            {/* xl:grid xl:justify-center xl:p-10
             xl:bg-[url(/imgs/frame.png)] xl:border-none 
-            xl:bg-no-repeat xl:bg-contain bg-center xl:m-0 dark:border-black 
-            xl:h-[500px] '>
-                <section className='grid  gap-2 xl:w-[280px] 
-                xl:text-center xl:px-8 xl:h-[80%] xl:items-center xl:m-auto '>
+            xl:bg-no-repeat xl:bg-contain bg-center xl:m-0 xl:h-[500px] */}
+            <section className=' py-4 my-4 border block mx-auto text-left w-[min(100%,650px)] p-4
+            rounded-3xl 
+            
+            dark:border-black 
+            '>
+                {/* xl:text-center xl:px-8 xl:h-[80%] xl:items-center xl:m-auto */}
+                <section className='grid   gap-2  
+                 '>
                     <h1 className='text-sm text-[1rem]  text-center font-semibold p-1 '>{t('Greeting2')}</h1>
                     <p className='text-sm text-[1rem] '>{t('Greeting3')}</p>
                     <p className='text-sm text-[1rem] ' >{t('Greeting4')}</p>

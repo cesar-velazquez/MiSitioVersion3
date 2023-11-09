@@ -36,17 +36,19 @@ const Projects = () => {
                     <h1 className='text-2xl text-center sm:text-2xl font-bold my-4 '>{t('Projects')}</h1>
                 </div>
             </div>
-            <div className='grid sm:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 pb-6 projects'>
+            <div className='grid sm:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 pb-6 
+            projects '>
                 {
                     projects.map((project, index) => (
                         <div
                             key={index}
                             // w-[250px] h-[200px]
-                            className='relative w-[250px] h-[200px]  md:w-[300px] md:h-[250px] flex justify-center m-auto py-4
+                            className='relative w-[250px] h-[200px]  md:w-[300px] md:h-[250px] 
+                            flex justify-center m-auto py-4
                             '>
 
-                            <div className=' relative z-20 flex flex-col justify-center items-center cursor-pointer 
-                            hover:opacity-100  '>
+                            <div className=' relative z-20 flex flex-col justify-center 
+                            items-center cursor-pointer hover:opacity-100  '>
                                 <img className='rounded-3xl w-[250px] h-[200px] md:w-[300px] 
                                 md:h-[250px] '
                                     src={project.image} alt={project.alt} />
@@ -74,8 +76,7 @@ const Projects = () => {
                                         {t (project.title)}
                                     </h3>
                                     <div className='flex justify-center items-center gap-3' >
-                                        {
-                                            // console.log(project.technology)
+                                        {                                            
                                             project.technology.includes("html5") && (
                                                 <i className='bx bxl-html5 text-[20px] text-teal-300 dark:text-white '></i>
                                             )

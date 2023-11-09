@@ -24,10 +24,11 @@ const Skills = () => {
         <main
             id='skills'
             className='
-            text-white pt-16 mx-auto w-full xl:max-w-[1200px] dark:text-black duration '>
-            <h1
+            text-white pt-16 mx-auto w-full xl:max-w-[1200px] dark:text-black duration 
+            '>
+            {/* <h1
                 className='text-2xl px-2 py-4
-            text-center sm:text-2xl font-extrabold' >{t('My')} <span className='underline' >{t('Skills')}</span></h1>
+            text-center sm:text-2xl font-extrabold' >{t('My')} <span className='underline' >{t('Skills')}</span></h1> */}
 
             <article className='relative skills'>
 

@@ -53,8 +53,8 @@ function App() {
       <main className="bg-gray-800 dark:bg-[#c2baa6] min-h-screen font-Poppins relative 
       transition-colors duration-1000">        
 
-        <section className='hidden xl:block absolute z-20 h-[400px] w-[180px] 
-          top-[30%] '>
+        <section className='fixed hidden xl:block z-10 h-[400px] w-[180px] 
+          top-[10%] rounded-l rounded-3xl transition-all duration-700  '>
           <div className='grid items-center top-[50%] translate-y-[30%]  gap-4'>
 
             <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer bg-blue-600 
@@ -102,12 +102,12 @@ function App() {
             <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer
             bg-orange-500 transition-all duration-700  '>
               <div className='flex bg-orange-600
-                            absolute h-[50px] left-[-50px] hover:left-0 p-4 transition-all duration-700  
+                            absolute h-[50px] left-[-80px] hover:left-0 p-4 transition-all duration-700  
               w-[50px] hover:w-[85%]  '>
                 <a className='flex items-center gap-[0px] hover:gap-0 text-white font-bold  
                 transition-all duration-700 text-xl '
                   rel="noopener noreferrer" href="mailto:velazquezortizcesar@gmail.com" target='_blank' >
-                  <h4 className='' >Cv</h4>
+                  <h4 className='' >Email</h4>
                   <li className='bx bx-envelope h-[50px] w-[50px] 
                   flex items-center justify-center'></li>
                 </a>
@@ -115,10 +115,7 @@ function App() {
             </section>
 
           </div>
-        </section>
-        {/* </section> */}
-        <section className='hidden lg:block'>
-        </section>
+        </section>        
 
         <section className="max-w-[1200px] mx-auto ">
           <NavBar isDark={isDark} handleChangeMode={handleChangeMode}
