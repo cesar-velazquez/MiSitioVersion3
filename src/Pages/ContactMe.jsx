@@ -3,7 +3,7 @@ import Contact from '../Components/Contact'
 
 const ContactMe = () => {
     return (
-        <main className='min-h-[80vh] flex items-center m-auto'>
+        <main className='min-h-[90vh] flex justify-center items-center '>
             <Contact />
         </main>
     )

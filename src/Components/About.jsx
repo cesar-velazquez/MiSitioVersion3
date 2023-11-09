@@ -17,7 +17,7 @@ const About = () => {
     return (
         <main
             id='About'
-            className='pt-24 pb-12 p-4 text-white
+            className='pt-16 xl:pt-0 p-4 text-white
         xl:grid xl:grid-cols-3 xl:h-[600px] dark:text-black dark:duration  
         about
         '>
@@ -47,7 +47,7 @@ const About = () => {
                                 <a href="https://github.com/cesar-velazquez" target='_blank' > | Github | </a>
                             </li>
                         </ul>
-                        <section className='text-sm m-auto'>
+                        <section className='text-sm m-auto z-20 relative '>
                             <a className='border-2 border-red-600 text-center text-red-600 
                         font-semibold p-2 hover:bg-red-600 hover:text-gray-800 text-[10px]
                         sm:text-[.75rem]
@@ -56,12 +56,7 @@ const About = () => {
                         </section>
                     </article>
                 </section>
-
-                {/* <div>
-                    <img className='absolute top-20 bg-rose-600 ' src="/imgs/Logo.png" alt="Logo" />
-                </div> */}
-
-                {/*menor a 1280 */}
+            
                 <section className='opacity-100 xl:hidden  h-[300px] sm:h-[300px] md:h-[500px] relative '>
                     <div className='h-[100%] w-[100%] relative'>
                         <div className='w-[130px] aspect-square bg-gray-900 dark:bg-gray-800 rounded-full 
@@ -72,8 +67,7 @@ const About = () => {
                 </section>
 
             </section>
-
-            {/* mayor de 1280 */}
+            
             <section className='hidden xl:block h-[400px] relative  '>
                 <div className=' h-[100%] flex items-start '>
                     <div className='w-[230px] aspect-square bg-gray-900 dark:bg-gray-800 rounded-full
@@ -86,9 +80,10 @@ const About = () => {
             <section className=' py-4 my-4 border block mx-auto text-left w-[min(100%,650px)] p-4
             rounded-3xl xl:grid xl:justify-center xl:p-10
             xl:bg-[url(/imgs/frame.png)] xl:border-none 
-            xl:bg-no-repeat xl:bg-contain bg-center xl:m-0 dark:border-black '>
+            xl:bg-no-repeat xl:bg-contain bg-center xl:m-0 dark:border-black 
+            xl:h-[500px] '>
                 <section className='grid  gap-2 xl:w-[280px] 
-                xl:text-center xl:px-8 '>
+                xl:text-center xl:px-8 xl:h-[80%] xl:items-center xl:m-auto '>
                     <h1 className='text-sm text-[1rem]  text-center font-semibold p-1 '>{t('Greeting2')}</h1>
                     <p className='text-sm text-[1rem] '>{t('Greeting3')}</p>
                     <p className='text-sm text-[1rem] ' >{t('Greeting4')}</p>

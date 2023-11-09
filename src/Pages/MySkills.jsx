@@ -3,10 +3,8 @@ import Skills from '../Components/Skills'
 
 const MySkills = () => {
     return (
-        <main className=''>
-            <section className=' '>
-                <Skills />
-            </section>
+        <main className='min-h-[90vh] flex justify-center items-center'>            
+                <Skills />            
         </main>
     )
 }

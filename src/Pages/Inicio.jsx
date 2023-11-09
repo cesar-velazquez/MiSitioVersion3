@@ -4,7 +4,7 @@ import About from '../Components/About'
 
 const Inicio = () => {
     return (
-        <main>        
+        <main className='min-h-[90vh] flex justify-center items-center  '>        
         <About />
         </main>
     )

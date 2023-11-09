@@ -24,7 +24,7 @@ const Skills = () => {
         <main
             id='skills'
             className='
-            text-white pt-16 mx-auto sm:w-full xl:max-w-[1200px] dark:text-black duration '>
+            text-white pt-16 mx-auto w-full xl:max-w-[1200px] dark:text-black duration '>
             <h1
                 className='text-2xl px-2 py-4
             text-center sm:text-2xl font-extrabold' >{t('My')} <span className='underline' >{t('Skills')}</span></h1>
@@ -36,11 +36,7 @@ const Skills = () => {
                     <img src="/imgs/circulo.svg" alt="" />
                 </div>
 
-                <div className='hidden lg:block '>
-                    {/* <div className=' absolute left-1/2 -translate-x-1/2 top-[45%] 
-                -translate-y-1/2 w-[300px] aspect-square flex justify-center m-auto '>
-                        <img src="/imgs/circulo.svg" alt="" />
-                    </div> */}
+                <div className='hidden lg:block '>                    
                     <div className='absolute left-1/2 -translate-x-1/2 top-[43%] 
                     w-[295px] h-[164px] shrink-0 '>
                         <img src="/imgs/border1.svg" alt="" />
@@ -112,8 +108,7 @@ const Skills = () => {
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper                
                 "
-                >
-                    {/* <hr className='bg-gray-800 h-[2px] mx-8 ' /> */}
+                >                    
                     <div
                         className=' h-[90%] grid justify-center 
                 items-center m-auto                
