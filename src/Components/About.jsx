@@ -90,7 +90,7 @@ const About = () => {
             '>
                 {/* xl:text-center xl:px-8 xl:h-[80%] xl:items-center xl:m-auto */}
                 <section className='grid   gap-2  
-                 '>
+                '>
                     <h1 className='text-sm text-[1rem]  text-center font-semibold p-1 '>{t('Greeting2')}</h1>
                     <p className='text-sm text-[1rem] '>{t('Greeting3')}</p>
                     <p className='text-sm text-[1rem] ' >{t('Greeting4')}</p>
