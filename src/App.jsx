@@ -91,7 +91,7 @@ function App() {
               w-[50px] hover:w-[85%]  '>
                 <a className='flex items-center gap-[0px] hover:gap-0 text-white font-bold  
                 transition-all duration-700 text-xl '
-                  href="/cv/César Velazquez Ortiz CV.pdf" target='_blank'>
+                  href="/cv/CV CésarVelazquez.pdf" target='_blank'>
                   <h4 className='' >Cv</h4>
                   <li className='bx bx-download h-[50px] w-[50px] 
                   flex items-center justify-center'></li>

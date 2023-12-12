@@ -53,12 +53,12 @@ const About = () => {
                             <a className='border-2 border-red-600 text-center text-red-600 
                         font-semibold p-2 hover:bg-red-600 hover:text-gray-800 text-[10px]
                         sm:text-[.75rem]
-                        transition-colors duration-700  '  href="/cv/César Velazquez Ortiz CV.pdf"
+                        transition-colors duration-700  '  href="/cv/CV CésarVelazquez.pdf"
                                 target='_blank'>{t('Download')} <i className='bx bxs-download dark:hover:text-yellow-200 hover:text-blue-500 '></i> </a>
                         </section>
                     </article>
                 </section>
-            
+
                 {/* xl:hidden */}
                 <section className='opacity-100 h-[300px] sm:h-[300px] md:h-[500px] relative '>
                     <div className='h-[100%] w-[100%] relative'>
@@ -70,7 +70,7 @@ const About = () => {
                 </section>
 
             </section>
-            
+
             {/* <section className='hidden xl:block h-[400px] relative  '>
                 <div className=' h-[100%] flex items-start '>
                     <div className='w-[230px] aspect-square bg-gray-900 dark:bg-gray-800 rounded-full
