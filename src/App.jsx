@@ -89,11 +89,11 @@ function App() {
               </div>
             </section>
 
-            <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer bg-red-600 
+            <section className='h-[50px] w-[40px] hover:w-[100px]  cursor-pointer bg-red-600 
             transition-all duration-700 '>
               <div className='flex hover:bg-red-900 
                             absolute h-[50px] left-[-50px] hover:left-0 pl-4 transition-all 
-                            duration-1000 w-[50px] hover:w-[85%]'>
+                            duration-1000 w-[50px] hover:w-[100px]'>
                 <a className='flex items-center gap-[0px] hover:gap-0 text-white font-bold  
                 transition-all duration-700 text-xl '
                   href="/cv/CVA césar velazquez.pdf" target='_blank'>
@@ -104,11 +104,11 @@ function App() {
               </div>
             </section>
 
-            <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer
+            <section className='h-[50px] w-[40px] hover:w-[120px]  cursor-pointer
             bg-orange-500 transition-all duration-700  '>
               <div className='flex bg-orange-600
                             absolute h-[50px] left-[-80px] hover:left-0 pl-4 transition-all duration-700  
-              w-[50px] hover:w-[85%]  '>
+              w-[50px] hover:w-[120px]  '>
                 <a className='flex items-center gap-[0px] hover:gap-0 text-white font-bold  
                 transition-all duration-700 text-xl '
                   rel="noopener noreferrer" href="mailto:velazquezortizcesar@gmail.com" target='_blank' >
