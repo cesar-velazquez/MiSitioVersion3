@@ -1,3 +1,4 @@
+import { t } from 'i18next'
 import React from 'react'
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
                         <i className='bx bxl-linkedin-square hover:text-white hover:scale-150'></i></a></li>
                 </ul>
             </div>
-            <p className="text-center  "> © copyright <a href="#"><b>César
+            <p className="text-center  "> {t('made')} <a href="#"><b>César
                 Velazquez</b></a> </p>
         </footer>
     )

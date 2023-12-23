@@ -6,7 +6,7 @@ import { t } from 'i18next'
 const About = () => {
 
     const Contactme = () =>{                
-        window.location.href = 'mailto:velazquezortizcesar@gmail.com?cc=velazquezortizcesar@gmail.com';
+        window.location.href = 'mailto:velazquezortizcesar@gmail.com';
     }
 
     useEffect(() => {

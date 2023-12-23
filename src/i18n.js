@@ -57,6 +57,7 @@ i18n
                     Project17: 'Crud Versión 2',
                     visit: 'Visitar Sitio',
                     coding: 'Ver Código',
+                    made: 'Realizado por'
                 },
             },
             en: {
@@ -110,6 +111,7 @@ i18n
                     Project17: 'Crud Version 2',
                     visit: 'View Website',
                     coding: 'View Code',
+                    made: 'Made by'
                 },
             },
         },
