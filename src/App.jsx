@@ -60,7 +60,7 @@ function App() {
             <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer bg-blue-600 
             transition-all duration-700'>
               <div className='flex bg-blue-300
-              absolute h-[50px] left-[-110px] hover:left-0 p-4 transition-all duration-700  
+              absolute h-[50px] left-[-110px] hover:left-0 pl-4 transition-all duration-700  
               w-[50px] hover:w-[84%]  '>
                 <a className='flex items-center gap-[0px] hover:gap-0 text-white font-bold  
                 transition-all duration-700 text-xl ' href="https://www.linkedin.com/in/c%C3%A9sar-velazquez-722a9121b/" target='_blank'>
@@ -71,12 +71,16 @@ function App() {
               </div>
             </section>
 
-            <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer bg-black transition-all duration-700  '>
-              <div className='flex bg-black
-              absolute h-[50px] left-[-110px] hover:left-0 p-4 transition-all duration-700  
-              w-[50px] hover:w-[84%]  '>
-                <a className='flex items-center gap-[15px] hover:gap-0 text-white font-bold  
-                transition-all duration-700 text-xl '
+
+            <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer
+            bg-black transition-all duration-700  '>              
+              <div className='flex bg-slate-900              
+              absolute h-[50px] left-[-110px] hover:left-0 pl-4  transition-all duration-700  
+              w-[50px] 
+              hover:w-[85%]
+                '>                  
+                <a className='flex items-center gap-[15px]  text-white font-bold  
+                transition-all duration-1000 text-xl hover:gap-0 '
                   href="https://github.com/cesar-velazquez" target='_blank'>
                   <h4 className='' >Github</h4>
                   <li className='bx bxl-github h-[50px] w-[50px] 
@@ -85,10 +89,11 @@ function App() {
               </div>
             </section>
 
-            <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer bg-red-600 transition-all duration-700  '>
-              <div className='flex bg-red-900
-                            absolute h-[50px] left-[-50px] hover:left-0 p-4 transition-all duration-700  
-              w-[50px] hover:w-[85%]  '>
+            <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer bg-red-600 
+            transition-all duration-700 '>
+              <div className='flex hover:bg-red-900 
+                            absolute h-[50px] left-[-50px] hover:left-0 pl-4 transition-all 
+                            duration-1000 w-[50px] hover:w-[85%]'>
                 <a className='flex items-center gap-[0px] hover:gap-0 text-white font-bold  
                 transition-all duration-700 text-xl '
                   href="/cv/CVA césar velazquez.pdf" target='_blank'>
@@ -102,7 +107,7 @@ function App() {
             <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer
             bg-orange-500 transition-all duration-700  '>
               <div className='flex bg-orange-600
-                            absolute h-[50px] left-[-80px] hover:left-0 p-4 transition-all duration-700  
+                            absolute h-[50px] left-[-80px] hover:left-0 pl-4 transition-all duration-700  
               w-[50px] hover:w-[85%]  '>
                 <a className='flex items-center gap-[0px] hover:gap-0 text-white font-bold  
                 transition-all duration-700 text-xl '

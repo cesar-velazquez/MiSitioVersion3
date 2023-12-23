@@ -101,9 +101,7 @@ const About = () => {
                         <a className='px-1 duration '
                             rel="noopener noreferrer"
                             onClick={Contactme}
-                            href='#'
-                            // href="mailto:velazquezortizcesar@gmail.com?cc=velazquezortizcesar@gmail.com"
-                            // href='https://mail.google.com/mail/?view=cm&fs=1&to=velazquezortizcesar@gmail.com&su=Asunto:'                            
+                            href='#'                            
                             target='_blank'>
                             <i className='bx-tada cursor-pointer hover:scale-105 bx bx-envelope bg-red-500 p-1 rounded-3xl mx-[3px] 
                             hover:bg-black hover:text-red-500 transition-colors duration-1000 mt-2 ' ></i>
