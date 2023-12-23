@@ -93,7 +93,15 @@ const About = () => {
                 '>
                     <h1 className='text-sm text-[1rem]  text-center font-semibold p-1 '>{t('Greeting2')}</h1>
                     <p className='text-sm text-[1rem] '>{t('Greeting3')}</p>
-                    <p className='text-sm text-[1rem] ' >{t('Greeting4')}</p>
+                    <p className='text-sm text-[1rem] ' >{t('Greeting4')}
+                        <a className='px-1 duration '
+                            rel="noopener noreferrer"
+                            href="mailto:velazquezortizcesar@gmail.com"
+                            target='_blank'>
+                            <i class='bx-tada cursor-pointer hover:scale-105 bx bx-envelope bg-red-500 p-1 rounded-3xl mx-[3px] 
+                            hover:bg-black hover:text-red-500 transition-colors duration-1000 mt-2 ' ></i>
+                        </a>
+                    </p>
                     {/* <p className='text-sm text-[1rem] ' >{t('Greeting5')}</p> */}
                 </section>
             </section>

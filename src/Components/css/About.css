@@ -21,3 +21,7 @@
 .animate-zoomInOut {
     animation: zoomInOut 5s infinite;
 }
+
+.duration{        
+    animation-duration: .1s;
+}
