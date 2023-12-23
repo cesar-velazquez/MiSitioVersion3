@@ -5,6 +5,10 @@ import { t } from 'i18next'
 
 const About = () => {
 
+    const Contactme = () =>{                
+        window.location.href = 'mailto:velazquezortizcesar@gmail.com?cc=velazquezortizcesar@gmail.com';
+    }
+
     useEffect(() => {
         ScrollReveal().reveal('.about', {
             duration: 3000,
@@ -96,9 +100,12 @@ const About = () => {
                     <p className='text-sm text-[1rem] ' >{t('Greeting4')}
                         <a className='px-1 duration '
                             rel="noopener noreferrer"
-                            href="mailto:velazquezortizcesar@gmail.com"
+                            onClick={Contactme}
+                            href='#'
+                            // href="mailto:velazquezortizcesar@gmail.com?cc=velazquezortizcesar@gmail.com"
+                            // href='https://mail.google.com/mail/?view=cm&fs=1&to=velazquezortizcesar@gmail.com&su=Asunto:'                            
                             target='_blank'>
-                            <i class='bx-tada cursor-pointer hover:scale-105 bx bx-envelope bg-red-500 p-1 rounded-3xl mx-[3px] 
+                            <i className='bx-tada cursor-pointer hover:scale-105 bx bx-envelope bg-red-500 p-1 rounded-3xl mx-[3px] 
                             hover:bg-black hover:text-red-500 transition-colors duration-1000 mt-2 ' ></i>
                         </a>
                     </p>
