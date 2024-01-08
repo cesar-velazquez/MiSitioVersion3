@@ -50,10 +50,12 @@ function App() {
 
   return (
     <>
-      <main className="bg-gray-800 dark:bg-[#c2baa6] min-h-screen font-Poppins relative 
-      transition-colors duration-1000">        
+      <main className="bg-gray-800
+      dark:bg-[#f5eedd]
+      min-h-screen font-Poppins relative 
+      transition-colors duration-1000">
 
-        <section className='fixed hidden xl:block z-10 h-[400px] w-[180px] 
+        <section className='fixed hidden lg:block z-10 h-[400px] w-[180px] 
           top-[10%] rounded-l rounded-3xl transition-all duration-700  '>
           <div className='grid items-center top-[50%] translate-y-[30%]  gap-4'>
 
@@ -73,12 +75,12 @@ function App() {
 
 
             <section className='h-[50px] w-[40px] hover:w-[150px]  cursor-pointer
-            bg-black transition-all duration-700  '>              
+            bg-black transition-all duration-700  '>
               <div className='flex bg-slate-900              
               absolute h-[50px] left-[-110px] hover:left-0 pl-4  transition-all duration-700  
               w-[50px] 
               hover:w-[85%]
-                '>                  
+                '>
                 <a className='flex items-center gap-[15px]  text-white font-bold  
                 transition-all duration-1000 text-xl hover:gap-0 '
                   href="https://github.com/cesar-velazquez" target='_blank'>
@@ -120,22 +122,33 @@ function App() {
             </section>
 
           </div>
-        </section>        
-
-        <section className="max-w-[1200px] mx-auto ">
-          <NavBar isDark={isDark} handleChangeMode={handleChangeMode}
-            handleChangeLanguage={handleChangeLanguage} isEnglish={isEnglish} t={t} />
-
-
-          <Routes>
-            <Route path='/' element={<Inicio />} />
-            <Route path='/contact' element={<ContactMe />} />
-            <Route path='/Skills' element={<MySkills />} />
-            <Route path='/Formation' element={<MyFormation />} />
-            <Route path='/Projects' element={<MyProjects />} />
-          </Routes>
-          <Footer />
         </section>
+
+        <section className='flex'>
+          <section className='bg-gray-800 duration-1000 transition-colors max-w-[900px] 
+          m-auto dark:bg-[#f5eedd] ' >
+          <section className='bg-black dark:bg-[#f2d48e] sm:pt-0 sm:mt-20 sm:mb-20 rounded-2xl '>
+
+            <section className="max-w-[1200px] mx-auto ">
+              <NavBar isDark={isDark} handleChangeMode={handleChangeMode}
+                handleChangeLanguage={handleChangeLanguage} isEnglish={isEnglish} t={t} />
+
+
+              <Routes>
+                <Route path='/' element={<Inicio />} />
+                <Route path='/contact' element={<ContactMe />} />
+                <Route path='/Skills' element={<MySkills />} />
+                <Route path='/Formation' element={<MyFormation />} />
+                <Route path='/Projects' element={<MyProjects />} />
+              </Routes>
+              {/* <Footer /> */}
+            </section>
+
+            {/* <section className='bg-red-400 max-w-[900px] ' > */}
+          </section>
+        </section>
+        </section>
+
       </main>
     </>
   )

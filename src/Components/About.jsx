@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import '../Components/css/About.css'
 import ScrollReveal from 'scrollreveal';
 import { t } from 'i18next'
+import Footer from './Footer';
 
 const About = () => {
 
@@ -18,20 +19,21 @@ const About = () => {
             reset: true,
         })
     }, [])
-    return (
-        // xl:pt-0 xl:grid xl:grid-cols-3 xl:h-[600px]
+    return (                                        
         <main
             id='About'
-            className='pt-16 p-4 text-white            
-    dark:text-black dark:duration  
-        about
-        '>
-            {/* xl:grid-cols-1  */}
-            <section className='grid  grid-cols-2 pb-8 xl:w-[1200px] 
+            className='pt-16 text-white                        
+    dark:text-black dark:duration     
+        about                        
+        sm:mx-4
+        flex flex-col items-center
+        rounded-2xl     
+        '>            
+            <section className='grid grid-cols-2 pb-8 pt-8 xl:w-[800px] 
             '>
                 <section className='grid gap-1 m-auto h-[300px] p-5 
                 sm:w-[280px] sm:gap-4
-                sm:mx-auto sm:text-xl sm:border sm:rounded-2xl sm:h-[300px] sm:p-4
+                sm:mx-auto sm:text-xl sm:border-black sm:border-2 sm:rounded-2xl sm:h-[300px] sm:p-4
                 md:w-[350px] relative                
                 '>
                     <div>
@@ -75,18 +77,6 @@ const About = () => {
 
             </section>
 
-            {/* <section className='hidden xl:block h-[400px] relative  '>
-                <div className=' h-[100%] flex items-start '>
-                    <div className='w-[230px] aspect-square bg-gray-900 dark:bg-gray-800 rounded-full
-                    absolute left-[50%] -translate-x-[45%] top-[10%] '></div>
-                    <img className=' h-[100%] w-[75%] flex justify-center m-auto items-center relative ' src="/imgs/opcion2.png" alt="Photo" />                    
-                </div>
-            </section> */}
-
-
-            {/* xl:grid xl:justify-center xl:p-10
-            xl:bg-[url(/imgs/frame.png)] xl:border-none 
-            xl:bg-no-repeat xl:bg-contain bg-center xl:m-0 xl:h-[500px] */}
             <section className=' py-4 my-4 border block mx-auto text-left w-[min(100%,650px)] p-4
             rounded-3xl 
             
@@ -110,6 +100,9 @@ const About = () => {
                     {/* <p className='text-sm text-[1rem] ' >{t('Greeting5')}</p> */}
                 </section>
             </section>
+            <div className=' pb-4 mt-5 rounded-b-2xl '>
+            <Footer />
+            </div>
         </main>
     )
 }

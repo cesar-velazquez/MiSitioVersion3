@@ -3,6 +3,7 @@ import ScrollReveal from 'scrollreveal';
 import { useForm } from 'react-hook-form';
 import emailjs, { sendForm } from '@emailjs/browser';
 import { t } from 'i18next';
+import Footer from './Footer';
 
 const Contact = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -63,11 +64,11 @@ const Contact = () => {
 
     })
     // }
-
+    // 'cubic-bezier(0.5, 0, 0, 1)'
     useEffect(() => {
         ScrollReveal().reveal('.Contactme', {
             duration: 2000,
-            origin: 'left',
+            origin: 'right',
             distance: '300px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
             reset: false,
@@ -203,6 +204,9 @@ const Contact = () => {
                     </form>
                 </article>
             </section>
+            <div className=' pb-4 mt-5 rounded-b-2xl '>
+                <Footer />
+            </div>
         </main>
     )
 }

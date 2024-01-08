@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import ScrollReveal from 'scrollreveal';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Footer from './Footer';
 
 const Skills = () => {
 
@@ -23,13 +24,11 @@ const Skills = () => {
     return (
         <main
             id='skills'
+            // xl:max-w-[1200px]
             className='
-            text-white pt-16 mx-auto w-full xl:max-w-[1200px] dark:text-black duration 
+            text-white pt-16 mx-auto w-full  dark:text-black duration 
+            max-w-[300px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[920px]
             '>
-            {/* <h1
-                className='text-2xl px-2 py-4
-            text-center sm:text-2xl font-extrabold' >{t('My')} <span className='underline' >{t('Skills')}</span></h1> */}
-
             <article className='relative skills'>
 
                 <div className='lg:bg-fuchsia-950 rounded-full absolute left-1/2 -translate-x-1/2 top-[45%] 
@@ -37,7 +36,7 @@ const Skills = () => {
                     <img src="/imgs/circulo.svg" alt="" />
                 </div>
 
-                <div className='hidden lg:block '>                    
+                <div className='hidden lg:block '>
                     <div className='absolute left-1/2 -translate-x-1/2 top-[43%] 
                     w-[295px] h-[164px] shrink-0 '>
                         <img src="/imgs/border1.svg" alt="" />
@@ -88,7 +87,7 @@ const Skills = () => {
                             <img src="/imgs/tech23.svg" alt="" />
                         </div>
 
-                        <div className='absolute right-[-15px] top-[30%] bx-tada'>
+                        <div className='absolute right-[1px] top-[25%] bx-tada'>
                             <img src="/imgs/tech24.svg" alt="" />
                         </div>
 
@@ -109,7 +108,7 @@ const Skills = () => {
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper                
                 "
-                >                    
+                >
                     <div
                         className=' h-[90%] grid justify-center 
                 items-center m-auto                
@@ -184,6 +183,9 @@ const Skills = () => {
                     </div>
                 </Swiper>
             </article>
+            <div className=' pb-4 mt-5 rounded-b-2xl '>
+                <Footer />
+            </div>
         </main>
     )
 }

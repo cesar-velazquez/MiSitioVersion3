@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import '../Components/css/Formation.css'
 import ScrollReveal from 'scrollreveal';
 import { t } from 'i18next';
+import Footer from './Footer';
 
 const Formation = () => {
 
@@ -149,7 +150,9 @@ const Formation = () => {
 
 
             </section>
-
+            <div className=' pb-4 mt-5 rounded-b-2xl '>
+                <Footer />
+            </div>
         </main>
     )
 }

@@ -13,24 +13,25 @@ const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage }) => {
 
     useEffect(() => {
         ScrollReveal().reveal('.navbar', {
-            duration: 2000,
-            origin: 'bottom',
+            duration: 500,
+            origin: 'top',
             distance: '2px',
             easing: 'cubic-bezier(0.5, 0, 0, 1)',
             reset: true,
         })
     }, [])
     return (
-        <section className='relative'>
-            {/* <div className='fixed bg-red-600 h-[25px] w-[30px]  top-[65px] hover:h-[50px]
-            transition-all duration-1000 cursor-pointer '>
-                <div className='relative bg-green-500 m-auto w-[80%] flex items-center justify-center 
-                top-[50%] -translate-y-[50%] ' >
-                    <li className='bx bxl-linkedin'></li>                
-                </div>
-            </div> */}
-            <header className='z-50 bg-gray-900 text-white font-bold p-4 flex justify-between items-center fixed w-[min(100%,_1200px)]
-        navbar dark:bg-[#F5ECD7] dark:border-b dark:border-black transition-colors duration-1000
+        <section className='relative '>
+            {/* fixed
+            bg-gray-900
+dark:bg-[#F5ECD7]  */}
+            <header className='z-50 rounded-t-2xl  text-white font-bold p-4 
+            bg-gray-900
+            dark:bg-[#f2d48e]
+
+            flex justify-between items-center relative
+            w-[min(100%,_900px)] navbar  dark:border-b-[2px]
+            transition-colors duration-1000
         '>
 
                 <nav className='text-2xl dark:text-black flex items-center gap-4'>
@@ -73,7 +74,6 @@ const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage }) => {
                         p-8 grid justify-center items-center
                         dark:bg-[#F5ECD7] dark:text-black  '>
                                 <ul className='grid gap-4'>
-                                    {/* <div className='bg-red-800 p-4 '> */}
                                     <div className='grid gap-4'>
                                         <li className='hover:scale-105'><Link to={'Skills'}>{t('Skills')}</Link></li>
                                         <li className='hover:scale-105'><Link to={'Projects'}>{t('Projects')}</Link></li>

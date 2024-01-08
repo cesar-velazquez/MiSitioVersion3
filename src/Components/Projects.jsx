@@ -4,6 +4,7 @@ import 'animate.css';
 import '../Components/css/Projects.css'
 import ScrollReveal from 'scrollreveal';
 import { t } from 'i18next';
+import Footer from './Footer';
 
 const Projects = () => {
     const [projects, setProjects] = useState([])
@@ -26,9 +27,9 @@ const Projects = () => {
     return (
         <main
             id='project'
-            className='p-4 text-white pt-14'>
+            className='p-4 text-white pt-14 sm:min-w-[900px]'>
             <div className='flex gap-4 justify-center items-center p-4 py-5 
-            dark:text-black duration'>
+            dark:text-black duration  '>
                 <div>
                     <img className='bx-burst duration ' src="/imgs/project.svg" alt="Icon_Projects" />
                 </div>
@@ -73,10 +74,10 @@ const Projects = () => {
                                     <h3
                                         className=' text-center font-urbanist p-2 text-white 
                                         bg-black/50 dark:rounded-3xl mx-2 '>
-                                        {t (project.title)}
+                                        {t(project.title)}
                                     </h3>
                                     <div className='flex justify-center items-center gap-3' >
-                                        {                                            
+                                        {
                                             project.technology.includes("html5") && (
                                                 <i className='bx bxl-html5 text-[20px] text-teal-300 dark:text-white '></i>
                                             )
@@ -118,6 +119,9 @@ const Projects = () => {
                         </div>
                     ))
                 }
+            </div>
+            <div className=' pb-4 mt-5 rounded-b-2xl '>
+                <Footer />
             </div>
         </main>
     )
