@@ -77,14 +77,12 @@ const About = () => {
 
             </section>
 
-            <section className=' py-4 my-4 border block mx-auto text-left w-[min(100%,650px)] p-4
-            rounded-3xl 
-            
+            <section className=' py-4 my-4 border block text-left w-[min(90%,650px)] p-4
+            rounded-3xl             
             dark:border-black 
             '>
                 {/* xl:text-center xl:px-8 xl:h-[80%] xl:items-center xl:m-auto */}
-                <section className='grid   gap-2  
-                '>
+                <section className='grid gap-2 '>
                     <h1 className='text-sm text-[1rem]  text-center font-semibold p-1 '>{t('Greeting2')}</h1>
                     <p className='text-sm text-[1rem] '>{t('Greeting3')}</p>
                     <p className='text-sm text-[1rem] ' >{t('Greeting4')}

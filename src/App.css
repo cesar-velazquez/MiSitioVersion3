@@ -6,3 +6,103 @@
     left: 0; /* Ubicación izquierda */
     background: radial-gradient(circle at 300px 400px, transparent 10%, rgb(85, 25, 25) 10px);    
 }
+
+@keyframes zoomInOut {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.7);
+        transform: rotate(0deg) scale(0.7);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg) scale(1);
+        transform: rotate(180deg) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) scale(0.7);
+        transform: rotate(360deg) scale(0.7);
+        opacity: 1;
+    }
+}
+
+.animate-zoomInOut {
+    animation: zoomInOut 15s infinite;
+}
+
+.duration{        
+    animation-duration: 5s;
+}
+/* Astro */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(55%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.animate-bounceIn {
+    animation: bounce 8s infinite;
+}
+
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+.animate-wiggleIn {
+    animation: wiggle 4s both infinite;
+}
+
+
+
+/* Tema Claro */
+/* Cubo Naranja */
+@keyframes jump-in {
+    0% {
+        transform: scale(0%);
+    }
+    80% {
+        transform: scale(120%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+.animate-jump-inIn {
+    animation: jump-in 5s both infinite;
+}
+
+/* Rosquilla */
+@keyframes jump {
+    0%, 100% {
+        transform: scale(100%);
+    }
+    10% {
+        transform: scale(80%);
+    }
+    50% {
+        transform: scale(120%);
+    }
+}
+.animate-jumpIn {
+    animation: jump 5s both infinite;
+}
+
+/* Blue */
+@keyframes pulse {
+    50% {
+        opacity: .5;
+    }
+}
+.animate-pulseIn {
+    animation: pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

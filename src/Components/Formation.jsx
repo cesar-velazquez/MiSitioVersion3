@@ -36,7 +36,7 @@ const Formation = () => {
 
 
                 <article className=' grid m-auto bg-gray-950 rounded-2xl min-h-[700px]
-                dark:bg-[#ebe2cd] dark:text-black duration '>
+                dark:bg-[#ebe2cd] dark:text-black duration mx-2 '>
                     <h1 className='text-white text-2xl text-center pt-4
                     dark:text-black ' >{t('Education')}</h1>
                     <article className='flex gap-4 pb-12 pt-4  '>
@@ -100,7 +100,7 @@ const Formation = () => {
                 </article>
                 {/* -------------------------------------------------------------------------------------------------------- */}
                 <article className='grid m-auto bg-gray-950 rounded-2xl min-h-[700px]
-                dark:bg-[#ebe2cd] dark:text-black duration '>
+                dark:bg-[#ebe2cd] dark:text-black duration mx-2 '>
                     <h1 className='text-white text-2xl text-center pt-4
                     dark:text-black ' >{t('Experience')}</h1>
                     <article className='flex gap-4 pb-12 pt-4 '>
