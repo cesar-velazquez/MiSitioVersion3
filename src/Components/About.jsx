@@ -22,14 +22,14 @@ const About = () => {
     return (                                        
         <main
             id='About'
-            className='pt-16 text-white                        
+            className='pt-16 sm:pt-0 text-white                        
     dark:text-black dark:duration     
         about                        
         sm:mx-4
         flex flex-col items-center
         rounded-2xl     
         '>            
-            <section className='grid grid-cols-2 pb-8 pt-8 xl:w-[800px] 
+            <section className='grid grid-cols-2 pb-8 pt-6 sm:pt-0 xl:w-[800px] 
             '>
                 <section className='grid gap-1 m-auto h-[300px] p-5 
                 sm:w-[280px] sm:gap-4
@@ -71,7 +71,7 @@ const About = () => {
                         <div className='w-[130px] aspect-square bg-gray-900 dark:bg-gray-800 rounded-full 
                         absolute left-[54%] -translate-x-1/2 top-[56%] -translate-y-[85%] 
                 md:w-[250px] md:left-[52%] '></div>
-                        <img className='h-[100%] flex items-center m-auto relative  ' src="/imgs/opcion2.png" alt="Photo" />
+                        <img className='h-[100%] flex items-center m-auto relative  ' src="/imgs/opcion2.png" alt="Photo Profile" />
                     </div>
                 </section>
 

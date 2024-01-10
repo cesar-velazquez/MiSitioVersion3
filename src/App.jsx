@@ -144,7 +144,7 @@ function App() {
                 </div>
                 {/* Tema Claro */}
                 <div className='hidden dark:block bg-red-100 '>
-                  <img className=' absolute top-[40rem] left-[-18rem] animate-pulseIn ' src="/imgs/Figures/cubic.svg" alt="Cubo" />
+                  <img className=' absolute top-[40rem] left-[-18rem] animate-wiggleIn ' src="/imgs/Figures/cubic.svg" alt="Cubo" />
                   <img className=' absolute top-[5rem] right-3 h-[150px] aspect-square animate-jump-inIn ' src="/imgs/Figures/circleglass.svg" alt="Circle Yellow" />
                   <img className='absolute top-8 left-[3rem] h-[300px] -z-50' src="/imgs/Figures/start1.1.svg" alt="start" />
                   <img className=' absolute bottom-[25rem] right-4 h-[200px] aspect-square animate-jumpIn ' src="/imgs/Figures/cubicY.svg" alt="Cubic" />
