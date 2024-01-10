@@ -111,9 +111,9 @@ dark:bg-[#F5ECD7]  */}
                         <ul className='hidden md:block dark:text-black transition-colors duration-1000 '>
                             <div className='flex gap-2'>
                                 <div className='flex gap-2 '>
-                                    <li><Link to={'Skills'} >{t('Skills')}</Link></li>
                                     <li><Link to={'Projects'}>{t('Projects')}</Link></li>
                                     <li><Link to={'Formation'} >{t('formation')}</Link></li>
+                                    <li><Link to={'Skills'} >{t('Skills')}</Link></li>
                                     <li><Link to={'contact'} className=''>{t('Contact')}</Link></li>
                                 </div>
                                 <span> | </span>
