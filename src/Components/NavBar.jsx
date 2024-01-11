@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import ScrollReveal from 'scrollreveal';
 import { t } from 'i18next';
 import { Link } from 'react-router-dom';
+import './css/NavBar.css'
 
 const NavBar = ({ handleChangeMode, isDark, handleChangeLanguage }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -35,7 +36,7 @@ dark:bg-[#F5ECD7]  */}
         '>
 
                 <nav className='text-2xl dark:text-black flex items-center gap-4'>
-                    <Link to={'/'} >Cv <span className='text-red-600 text-2xl' >.</span></Link>
+                    <Link className='hover:scale-95' to={'/'} >Cv <span className='text-red-600 text-2xl' >.</span></Link>
                     <div className='flex items-center gap-4'>
                         <li className='hidden md:block list-none' onClick={handleChangeMode}>
                             {
@@ -111,10 +112,10 @@ dark:bg-[#F5ECD7]  */}
                         <ul className='hidden md:block dark:text-black transition-colors duration-1000 '>
                             <div className='flex gap-2'>
                                 <div className='flex gap-2 '>
-                                    <li className='hover:scale-105 '><Link className='transition-colors duration-500 hover:bg-gray-700 p-2 hover:rounded-lg dark:hover:bg-[#f6e9ca]' to={'Projects'}>{t('Projects')}</Link></li>
-                                    <li className='hover:scale-105 '><Link className='transition-colors duration-500 hover:bg-gray-700 p-2 hover:rounded-lg dark:hover:bg-[#f6e9ca]' to={'Formation'}>{t('formation')}</Link></li>
-                                    <li className='hover:scale-105 '><Link className='transition-colors duration-500 hover:bg-gray-700 p-2 hover:rounded-lg dark:hover:bg-[#f6e9ca]' to={'Skills'}>{t('Skills')}</Link></li>
-                                    <li className='hover:scale-105 '><Link className='transition-colors duration-500 hover:bg-gray-700 p-2 hover:rounded-lg dark:hover:bg-[#f6e9ca]' to={'contact'}>{t('Contact')}</Link></li>
+                                    <li className='hover:scale-105 '><Link className='hover:transition-colors hover:duration-500 hover:bg-gray-700 p-1 hover:rounded-lg dark:hover:bg-[#f6e9ca]' to={'Projects'}>{t('Projects')}</Link></li>
+                                    <li className='hover:scale-105 '><Link className='hover:transition-colors hover:duration-500 hover:bg-gray-700 p-1 hover:rounded-lg dark:hover:bg-[#f6e9ca]' to={'Formation'}>{t('formation')}</Link></li>
+                                    <li className='hover:scale-105 '><Link className='hover:transition-colors hover:duration-500 hover:bg-gray-700 p-1 hover:rounded-lg dark:hover:bg-[#f6e9ca]' to={'Skills'}>{t('Skills')}</Link></li>
+                                    <li className='hover:scale-105 '><Link className='hover:transition-colors hover:duration-500 hover:bg-gray-700 p-1 hover:rounded-lg dark:hover:bg-[#f6e9ca]' to={'contact'}>{t('Contact')}</Link></li>
                                 </div>
                                 <span> | </span>
                                 <div className='flex gap-2 animate-pulse'>
