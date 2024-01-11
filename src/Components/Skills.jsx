@@ -122,7 +122,7 @@ const Skills = () => {
                         <SwiperSlide>
                             <div className=' p-4 py-12 grid justify-center items-center m-auto'>
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square rounded-full
-                            hover:scale-110 ' src="/imgs/skills/css.jpg" alt="CSS" />
+                            hover:scale-110 ' src="/imgs/skills/css.svg" alt="CSS" />
                                 <h1 className='text-center underline font-bold
                         p-4  text-2xl dark:text-white ' >CSS</h1>
                             </div>
@@ -130,7 +130,7 @@ const Skills = () => {
                         <SwiperSlide>
                             <div className=' py-12 p-4 m-auto'>
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square rounded-full hover:scale-110 '
-                                    src="/imgs/skills/html5.jpg" alt="HTML" />
+                                    src="/imgs/skills/html5.svg" alt="HTML" />
                                 <h1 className='text-center underline font-bold
                         p-4  text-2xl dark:text-white ' >HTML</h1>
                             </div>
@@ -138,7 +138,7 @@ const Skills = () => {
                         <SwiperSlide>
                             <div className=' py-12 p-4 m-auto'>
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square rounded-full hover:scale-110 '
-                                    src="/imgs/skills/js.jpg" alt="HTML" />
+                                    src="/imgs/skills/js.svg" alt="HTML" />
                                 <h1 className='text-center underline font-bold
                         p-4  text-2xl dark:text-white ' >JS</h1>
                             </div>
@@ -148,7 +148,7 @@ const Skills = () => {
                                 <img
                                     className='m-auto w-[100px] sm:w-[200px] aspect-square 
                         rounded-full hover:scale-110 object-cover '
-                                    src="/imgs/skills/react.jpg" alt="HTML" />
+                                    src="/imgs/skills/react2.svg" alt="React" />
                                 <h1 className='text-center underline font-bold
                         p-4  text-2xl dark:text-white ' >React</h1>
                             </div>
@@ -157,7 +157,7 @@ const Skills = () => {
                             <div className=' py-12 p-4 m-auto'>
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square 
                         rounded-full hover:scale-110  '
-                                    src="/imgs/skills/tailwind.jpg" alt="Tailwind" />
+                                    src="/imgs/skills/tailwind1.svg" alt="Tailwind" />
                                 <h1 className='text-center underline font-bold
                         p-4  text-2xl dark:text-white ' >Tailwind</h1>
                             </div>
@@ -166,7 +166,7 @@ const Skills = () => {
                             <div className=' py-12 p-4 m-auto'>
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square 
                         rounded-full hover:scale-110  '
-                                    src="/imgs/skills/github.jpg" alt="HTML" />
+                                    src="/imgs/skills/icgithub.svg" alt="Github" />
                                 <h1 className='text-center underline font-bold
                         p-4  text-2xl dark:text-white ' >Github</h1>
                             </div>
@@ -175,7 +175,7 @@ const Skills = () => {
                             <div className=' py-12 p-4 m-auto'>
                                 <img className='m-auto w-[100px] sm:w-[200px] aspect-square 
                         rounded-full hover:scale-110  '
-                                    src="/imgs/skills/sql.jpg" alt="Sql" />
+                                    src="/imgs/skills/sqlserver.svg" alt="Sql" />
                                 <h1 className='text-center underline font-bold
                         p-4  text-2xl dark:text-white ' >Sql</h1>
                             </div>

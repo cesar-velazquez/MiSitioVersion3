@@ -94,8 +94,7 @@ const About = () => {
                             <i className='bx-tada cursor-pointer hover:scale-105 bx bx-envelope bg-red-500 p-1 rounded-3xl mx-[3px] 
                             hover:bg-black hover:text-red-500 transition-colors duration-1000 mt-2 ' ></i>
                         </a>
-                    </p>
-                    {/* <p className='text-sm text-[1rem] ' >{t('Greeting5')}</p> */}
+                    </p>                    
                 </section>
             </section>
             <div className=' pb-4 mt-5 rounded-b-2xl '>
