@@ -6,7 +6,7 @@ import Softskill from '../Components/Softskill'
 
 const MySkills = () => {
     return (
-        <main className='min-h-[110vh] flex flex-col justify-around pt-5 lg:gap-20 items-center 
+        <main className='min-h-[110vh] flex flex-col justify-between pt-5 lg:gap-20 items-center 
         relative '>
             <h1
                 className='text-2xl px-2 text-white dark:text-black
@@ -14,7 +14,7 @@ const MySkills = () => {
             text-center sm:text-2xl font-extrabold' >{t('My')} <span className='underline' >{t('Skills')}</span></h1>
             <Softskill/>
             <Skills />
-            <div className=' pb-2 mt-5 rounded-b-2xl '>
+            <div className=' pt-[5rem] rounded-b-2xl '>
                 <Footer />
             </div>
         </main>
