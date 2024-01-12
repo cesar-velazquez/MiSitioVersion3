@@ -91,13 +91,6 @@ const SoftSkillsSwipper = () => {
                         </div>
                     </SwiperSlide>
 
-
-
-
-
-
-
-
                     <div className='autoplay-progress bg-yellow-400  ' slot="">
                         <svg viewBox="10 1 0 1" ref={progressCircle}>
                             <circle cx="24" cy="24" r="20"></circle>

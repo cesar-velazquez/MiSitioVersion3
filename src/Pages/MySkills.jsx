@@ -1,8 +1,8 @@
 import React from 'react'
 import Skills from '../Components/Skills'
 import { t } from 'i18next'
-import SoftSkills from '../Components/softSkills'
 import Footer from '../Components/Footer'
+import Softskill from '../Components/Softskill'
 
 const MySkills = () => {
     return (
@@ -12,7 +12,7 @@ const MySkills = () => {
                 className='text-2xl px-2 text-white dark:text-black
                 sm:absolute top-[5rem] sm:top-5
             text-center sm:text-2xl font-extrabold' >{t('My')} <span className='underline' >{t('Skills')}</span></h1>
-            <SoftSkills />
+            <Softskill/>
             <Skills />
             <div className=' pb-2 mt-5 rounded-b-2xl '>
                 <Footer />
