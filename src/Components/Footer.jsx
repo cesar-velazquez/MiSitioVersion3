@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className='text-white dark:text-black'>        
             <div className=''>
-                <ul className='flex justify-center gap-4 p-4' >
+                <ul className='flex justify-center gap-5 p-4' >
                     <li><a href="https://github.com/cesar-velazquez" target="_blank">
                         <i className='bx bxl-github hover:text-white hover:scale-150 '></i></a></li>
                     <li><a href="https://www.linkedin.com/in/c%C3%A9sar-velazquez-722a9121b/" target="_blank">

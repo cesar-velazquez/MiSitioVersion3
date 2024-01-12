@@ -1,0 +1,16 @@
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+.animate-wiggleIn {
+    animation: wiggle 3s both infinite;
+}
+

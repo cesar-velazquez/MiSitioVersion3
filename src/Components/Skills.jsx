@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { t } from 'i18next'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css"
 // Import Swiper styles
@@ -23,61 +22,62 @@ const Skills = () => {
     }, [])
     return (
         <main
-            id='skills'
-            // xl:max-w-[1200px]
+            id='skills'            
             className='
-            text-white pt-16 mx-auto w-full  dark:text-black duration 
+            text-white pt-10 mx-auto w-full  dark:text-black duration 
             max-w-[300px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[920px]
+            sm:h-[100%]
             '>
-            <article className='relative skills'>
+            <article className='relative skills '>
 
-                <div className='lg:bg-fuchsia-950 rounded-full absolute left-1/2 -translate-x-1/2 top-[45%] 
-                -translate-y-1/2 w-[230px] sm:w-[300px] aspect-square flex justify-center m-auto '>
+                <div className='lg:bg-fuchsia-950/10 rounded-full absolute left-1/2 -translate-x-1/2 top-[45%] 
+                -translate-y-1/2 w-[200px] sm:w-[250px] aspect-square flex justify-center m-auto '>
                     <img src="/imgs/circulo.svg" alt="" />
                 </div>
 
                 <div className='hidden lg:block '>
                     <div className='absolute left-1/2 -translate-x-1/2 top-[43%] 
                     w-[295px] h-[164px] shrink-0 '>
-                        <img src="/imgs/border1.svg" alt="" />
+                        <img src="/imgs/border1.svg" alt="Circulo1" />
                     </div>
                     <div className='absolute left-1/2 -translate-x-1/2 top-[10%]
                     w-[306px] h-[275px] shrink-0 '>
-                        <img src="/imgs/border2.svg" alt="" />
+                        <img src="/imgs/border2.svg" alt="Circulo2" />
                     </div>
+                    
                     {/* Circulos */}
                     <div className=' absolute left-1/2 -translate-x-1/2 top-[15%]
                     w-[695px] h-[269px] shrink-0 '>
-                        <img src="/imgs/circun1.svg" alt="" />
+                        <img src="/imgs/circun1.svg" alt="Circulo3" />
 
                         <div className='absolute left-2 top-[47%] bx-tada'>
-                            <img className='' src="/imgs/tech1.svg" alt="" />
+                            <img className='' src="/imgs/tech1.svg" alt="Tecnología1" />
                         </div>
 
                         <div className='absolute right-9 top-[30%] bx-tada'>
-                            <img src="/imgs/tech21.svg" alt="" />
+                            <img src="/imgs/tech21.svg" alt="Tecnología2" />
                         </div>
                     </div>
 
-
-                    <div className='absolute left-1/2 -translate-x-1/2 top-[15%]
+                     {/* Circulos Pequeños */}
+                    <div className='absolute left-1/2 -translate-x-1/2 top-[15%] 
                     w-[764px] h-[269px] shrink-0 '>
-                        <img src="/imgs/circun2.svg" alt="" />
+                        <img src="/imgs/circun2.svg" alt="Circulo4" />
 
                         <div className='absolute left-[-10px] top-[35%] bx-tada'>
                             <img src="/imgs/tech2.svg" alt="Linkedin" />
                         </div>
 
                         <div className='absolute right-5 top-[50%] bx-tada'>
-                            <img src="/imgs/tech22.svg" alt="" />
+                            <img src="/imgs/tech22.svg" alt="Figma" />
                         </div>
 
                     </div>
 
 
                     <div className='absolute left-1/2 -translate-x-1/2 top-[15%]
-                    w-[881px] h-[269px] shrink-0 '>
-                        <img src="/imgs/circun3.svg" alt="" />
+                    w-[881px] h-[269px] shrink-0 max-w-[700px]   '>
+                        <img src="/imgs/circun3.svg" alt="Circ" />
 
                         <div className='absolute left-3 top-[68%] bx-tada'>
                             <img src="/imgs/tech3.svg" alt="" />
@@ -109,12 +109,9 @@ const Skills = () => {
                     className="mySwiper                
                 "
                 >
-                    <div
-                        className=' h-[90%] grid justify-center 
-                items-center m-auto                
-                '>
-                        <div
-                            className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4 m-auto'>
+                    <div className=' h-[90%] grid justify-center items-center m-auto '>
+                        <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4 m-auto '>
+
                         </div>
 
 
@@ -183,9 +180,6 @@ const Skills = () => {
                     </div>
                 </Swiper>
             </article>
-            <div className=' pb-4 mt-5 rounded-b-2xl '>
-                <Footer />
-            </div>
         </main>
     )
 }
