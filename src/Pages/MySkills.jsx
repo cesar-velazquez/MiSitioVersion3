@@ -14,7 +14,7 @@ const MySkills = () => {
             text-center sm:text-2xl font-extrabold' >{t('My')} <span className='underline' >{t('Skills')}</span></h1>
             <Softskill/>
             <Skills />
-            <div className=' pt-[5rem] rounded-b-2xl '>
+            <div className=' pt-[5rem] mb-[1rem] rounded-b-2xl '>
                 <Footer />
             </div>
         </main>

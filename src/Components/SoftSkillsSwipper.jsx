@@ -30,7 +30,7 @@ const SoftSkillsSwipper = () => {
                     spaceBetween={30}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 200000,
+                        delay: 1500,
                         disableOnInteraction: false,
                     }}
                     pagination={{
