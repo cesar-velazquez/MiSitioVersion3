@@ -59,7 +59,7 @@ function App() {
               absolute h-[50px] left-[-110px] hover:left-0 pl-4 transition-all duration-700  
               w-[50px] hover:w-[84%]  '>
                 <a className='flex items-center gap-[0px] hover:gap-0 text-white font-bold  
-                transition-all duration-700 text-xl ' href="https://www.linkedin.com/in/c%C3%A9sar-velazquez-722a9121b/" target='_blank'>
+                transition-all duration-700 text-xl ' href="https://www.linkedin.com/in/c%C3%A9sar-vel%C3%A1zquez-722a9121b/" target='_blank'>
                   <h4 className='' >Linkedin</h4>
                   <li className='bx bxl-linkedin h-[50px] w-[50px] 
                   flex items-center justify-center'></li>
