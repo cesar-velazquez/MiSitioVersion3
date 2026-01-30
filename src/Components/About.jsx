@@ -41,7 +41,7 @@ const About = () => {
                     </div>
                     <h1 className='text-sm grid  ' >{t('Greeting')}
                         <span className='text-lg sm:text-4xl'> César</span>
-                        <span className='text-lg sm:text-4xl' >Velazquez<span className='text-lg sm:text-4xl '>.</span> </span></h1>
+                        <span className='text-lg sm:text-4xl' >Velázquez<span className='text-lg sm:text-4xl '>.</span> </span></h1>
 
                     <div className='bg-red-600 h-[2px] w-[100px] max-w-[500px] '>
                     </div>
