@@ -12,7 +12,7 @@ const Contact = () => {
     const SendEmail = (data) => {
         emailjs.sendForm('service_xe77o2d', 'template_bzcvttj', form.current, 'dHdulfhsOYul4kPWH')
             .then((result) => {
-                console.log(result.text);
+                // console.log(result.text);
                 form.current.reset();
                 // setIsShowModal(true);
             })
@@ -77,43 +77,43 @@ const Contact = () => {
     return (
         <main
             id='contact'
-            className='text-white pb-6 Contactme pt-20 '>
-            <section className='sm:grid sm:grid-cols-2 sm:gap-6  ' >
+            className='text-white Contactme '>
+            <section className='sm:grid sm:grid-cols-2 gap-6 py-8 max-sm:grid max-sm:gap-4  ' >
                 <article className='grid px-4 ' >
-                    <h1 className='p-4 border 
-                    border-black w-[min(100%,_450px)] grid m-auto 
+                    <h1 className='p-4 border-2
+                    border-white w-[min(100%,_450px)] grid m-auto 
                     justify-start items-center text-3xl sm:text-5xl
                     bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black
                     rounded-2xl
-                    dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-blue-700 dark:via-blue-800 dark:to-gray-900 ' >
+                    dark:text-black dark:border-yellow-100
+                    dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-yellow-200 dark:via-yellow-100 dark:to-yellow-100 ' >
                         <span className='text-center py-4 sm:font-bold' >{t('Talks')}!</span>
                         <span className=' text-xl sm:text-2xl text-center sm:font-medium '>
                             {t('Askme')}
                         </span> </h1>
                 </article>
 
-                <article className='px-4 mt-8 min-h-[450px] h-[500px] grid ' >
+                <article className='px-4 min-h-[450px] grid ' >
                     <form
                         ref={form}
                         onSubmit={handleSubmit(submit)}
-                        className='p-4  pt-12 w-[min(100%,_300px)] grid items-center m-auto 
-                        bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black
-                    rounded-xl h-[100%] gap-8 shadow-2xl shadow-black text-black
-                    text-xs
-                    dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-blue-700 dark:via-blue-800 dark:to-gray-900 '
+                        className='p-4 max-sm:pt-0 w-[min(100%,_380px)] grid items-center m-auto 
+                        bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-950 via-from-blue-950 to-from-blue-950
+                    rounded-xl h-[100%] gap-8 border-2 shadow-2xl dark:shadow-2xl shadow-white  dark:shadow-black text-black
+                    text-xs dark:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-yellow-200 dark:via-yellow-100 dark:to-yellow-100 '
                         action="">
                         <section className='grid gap-4 py-4 '>
                             <div
                                 id='name'
-                                className='grid gap-2 m-auto w-[95%] p-4 bg-black/30 rounded-2xl '>
+                                className='grid gap-2 m-auto w-[95%] p-4 dark:bg-yellow-300/30 rounded-2xl border-2 border-blue-900 dark:border-yellow-300 '>
                                 <label
-                                    className='text-white'
+                                    className='text-white text-center text-lg dark:text-black '
 
                                     htmlFor="first_name">{t('SayName')}</label>
                                 <input
-                                    className={`rounded-md text-white py-3 px-2 bg-black/30
-                                    border border-black outline-none
-                                    ${isClick && "shadow-md shadow-blue-600 "} `}
+                                    className={`rounded-md py-3 px-2 border-white dark:bg-yellow-100 text-sm placeholder:text-black placeholder:text-base
+                                    border-2 dark:border-yellow-300 outline-none
+                                    ${isClick && "shadow-md shadow-yellow-100 "} `}
                                     name='first_name'
                                     id='first_name'
                                     type="text"
@@ -138,15 +138,15 @@ const Contact = () => {
 
                             <div
                                 id='email'
-                                className='grid gap-2 m-auto w-[95%] p-4 bg-black/30 rounded-2xl '>
+                                className='grid gap-2 m-auto w-[95%] p-4  dark:bg-yellow-300/30 rounded-2xl border-2 dark:border-yellow-300 border-blue-900  '>
 
                                 <label
-                                    className='text-white'
+                                    className='text-white text-center text-lg dark:text-black'
                                     htmlFor="email_i">{t('SayEmail')}</label>
                                 <input
-                                    className={`rounded-md text-white py-3 px-2 bg-black/30
-                                    border border-black outline-none
-                                    ${email && "shadow-md shadow-green-600 "} `}
+                                    className={`rounded-md py-3 px-2 dark:bg-yellow-100 text-sm placeholder:text-black placeholder:text-base
+                                    border-2 dark:border-yellow-300 border-blue-900 outline-none
+                                    ${email && "shadow-md shadow-yellow-100 "} `}
                                     id='email_i'
                                     type="email"
                                     placeholder={t('WriteEmail')}
@@ -165,18 +165,19 @@ const Contact = () => {
 
                             <div
                                 id='message'
-                                className='w-[95%] p-4 grid gap-2 m-auto bg-black/30 rounded-2xl
+                                className='w-[95%] p-4 grid gap-2 m-auto  dark:bg-yellow-300/30 rounded-2xl border-2 dark:border-yellow-300 border-blue-900
                             '>
                                 <label
-                                    className='text-white'
+                                    className='text-white text-center text-lg dark:text-black'
                                     htmlFor="messagge">
                                     {t('MessageMe')}
                                 </label>
                                 <textarea
                                     className=
-                                    {`resize-none rounded-md min-h-[100px] py-3 px-2 bg-black/30
-                                    border border-black outline-none text-white
-                                    ${message && "shadow-md shadow-fuchsia-600 "} `}
+                                    {`resize-none rounded-md min-h-[100px] py-3 px-2
+                                        dark:bg-yellow-100 text-sm placeholder:text-black placeholder:text-base
+                                    border-2 dark:border-yellow-300 border-blue-900 outline-none
+                                    ${message && "shadow-md shadow-yellow-100 "} `}
                                     id="message"
                                     name='message'
                                     placeholder={t('Message')}
@@ -195,9 +196,9 @@ const Contact = () => {
                                     {errors.message && <p className='text-red-700 text-center m-auto font-semibold rounded-3xl w-[200px] bg-white/40'>{errors.message.message}</p>}
                                 </textarea>
                             </div>
-                            <input className='border rounded-md w-[100px] m-auto
+                            <input className='border-2 rounded-lg min-w-[150px] text-lg m-auto p-2 mt-[.5rem]
                         hover:bg-gray-700 hover:text-white transition hover:scale-105
-                        duration-700 text-white '
+                        duration-700 text-white font-bold '
                                 type='submit' value={t('Send')} />
                         </section>
 
